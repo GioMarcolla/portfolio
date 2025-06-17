@@ -8,7 +8,7 @@ import axios from "axios";
 export const useBioDataStore = create(
     createLazyStore<BioDataType>(async () => {
         try {
-            const res = await api.get("/bio");
+            const res = await api.get("/bioData");
             console.log("Bio data updated at " + new Date().toLocaleDateString("en-us"))
 
             return parseBioData(res.data);

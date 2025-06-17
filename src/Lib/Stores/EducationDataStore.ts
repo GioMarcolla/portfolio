@@ -9,7 +9,7 @@ import api from '@/Lib/Utils/AxiosUtils';
 export const useEducationDataStore = create(
     createLazyStore<EducationDataType[]>(async () => {
         try {
-            const res = await api.get("/bio");
+            const res = await api.get("/educationData");
             console.log(
                 "Bio data updated at " + new Date().toLocaleDateString("en-us")
             );

@@ -1,7 +1,7 @@
 import { createEducationDataFactory } from "@/Lib/Factories/EducationDataFactory";
 import { EducationDataType } from "@/Lib/Types/EducationDataType";
 
-export function parseEducationData(rawData: any[]): EducationDataType[] {
+export function parseEducationData(rawData: EducationDataType[]): EducationDataType[] {
     return rawData.map((entry) =>
         createEducationDataFactory({
             id: entry.id,

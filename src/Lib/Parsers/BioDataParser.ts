@@ -1,7 +1,7 @@
 import { BioDataType } from '@/Lib/Types/BioDataType';
 import { calculateAgeFromBirthdateISO } from '@/Lib/Utils/AgeUtils';
 
-export const parseBioData = (rawData: any): BioDataType => {
+export const parseBioData = (rawData: BioDataType): BioDataType => {
     return {
         Name: {
             First: rawData.Name.First,
@@ -27,7 +27,7 @@ export const parseBioData = (rawData: any): BioDataType => {
                 )}/${rawData.Birthdate.Month.toString().padStart(
                     2,
                     "0"
-                )}/${rawData.Birthdate.Day.toString().padStart(2, "0")}`;
+                )}${rawData.Birthdate.Day ? "/" + rawData.Birthdate.Day.toString().padStart(2, "0") : ""}`;
             },
         },
         Gender: rawData.Gender,

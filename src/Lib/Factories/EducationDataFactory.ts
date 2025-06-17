@@ -5,7 +5,7 @@ export const createEducationDataFactory = (
 ): EducationDataType => {
     const data = {
         ...newData,
-    };
+    } as EducationDataType;
 
     data.toString = function () {
         return `${this.Degree} in ${this.Major} at ${this.Institution} from ${this.DateStarted} to ${this.DateCompleted}. Minor in ${this.Track}`;

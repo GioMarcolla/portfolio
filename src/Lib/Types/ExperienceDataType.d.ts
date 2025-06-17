@@ -31,9 +31,8 @@ export type ExperienceDataType = {
     readonly Achievements?: string;
     readonly DateStarted: ExperienceDateStartedType;
     readonly DateEnd?: ExperienceDateEndType;
-    readonly CurrentJob?: Boolean;
-
-    readonly Duration: () => string;
+    readonly CurrentJob?: boolean;
+    Duration: string;
 
     toString: () => string;
 };

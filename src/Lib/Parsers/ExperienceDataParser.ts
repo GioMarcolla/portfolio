@@ -4,12 +4,15 @@ import { ExperienceDataType } from "@/Lib/Types/ExperienceDataType";
 export function parseExperienceData(rawData: any[]): ExperienceDataType[] {
     return rawData.map((entry) =>
         createExperienceDataFactory({
+            id: entry.id,
             CompanyName: entry.CompanyName,
             Department: entry.Department,
             Team: entry.Team,
-            Country: entry.Country,
-            State: entry.State,
-            City: entry.City,
+            Location: {
+                Country: entry.Location.Country,
+                State: entry.Location.State,
+                City: entry.Location.City,
+            },
             JobTitle: entry.JobTitle,
             JobType: entry.JobType,
             Level: entry.Level,

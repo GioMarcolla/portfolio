@@ -14,8 +14,15 @@ export const createEducationDataFactory = (
     data.DateStarted.toString = function () {
         return [this.Day, this.Month, this.Year].filter(Boolean).join("/");
     };
-    data.DateCompleted.toString = function () {
-        return [this.Day, this.Month, this.Year].filter(Boolean).join("/");
+
+    if (data.DateCompleted) {
+        data.DateCompleted.toString = function () {
+            return [this.Day, this.Month, this.Year].filter(Boolean).join("/");
+        };
+    }
+
+    data.Location.toString = function () {
+        return `${this.City}, ${this.State}, ${this.Country}`;
     };
 
     return data;

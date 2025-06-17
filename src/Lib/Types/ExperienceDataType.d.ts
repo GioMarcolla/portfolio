@@ -1,10 +1,18 @@
+import { BasicDateType } from "@/Lib/Types//BasicDateType";
+import { BasicLocationType } from "@/Lib/Types//BasicLocationType";
+
+export type ExperienceDateStartedType = BasicDateType;
+
+export type ExperienceDateEndType = BasicDateType;
+
+export type ExperienceLocationType = BasicLocationType;
+
 export type ExperienceDataType = {
+    readonly id: number;
     readonly CompanyName: string;
     readonly Department?: string;
     readonly Team?: string;
-    readonly Country: string;
-    readonly State: string;
-    readonly City: string;
+    readonly Location: ExperienceLocationType;
     readonly JobTitle: string;
     readonly JobType: "Contract" | "Part-Time" | "Full-Time" | "Internship";
     readonly Level?:
@@ -21,20 +29,8 @@ export type ExperienceDataType = {
     readonly Description: string;
     readonly Responsibilities: string;
     readonly Achievements?: string;
-    readonly DateStarted: {
-        readonly Year: number;
-        readonly Month: number;
-        readonly Day: number;
-
-        toString: () => string;
-    };
-    readonly DateEnd?: {
-        readonly Year: number;
-        readonly Month: number;
-        readonly Day: number;
-
-        toString: () => string;
-    };
+    readonly DateStarted: ExperienceDateStartedType;
+    readonly DateEnd?: ExperienceDateEndType;
     readonly CurrentJob?: Boolean;
 
     readonly Duration: () => string;

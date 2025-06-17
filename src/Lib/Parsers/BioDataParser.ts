@@ -7,6 +7,7 @@ export const parseBioData = (rawData: any): BioDataType => {
             First: rawData.Name.First,
             Middle: rawData.Name.Middle,
             Last: rawData.Name.Last,
+
             toString() {
                 return [this.First, this.Middle, this.Last]
                     .filter(Boolean)
@@ -18,6 +19,7 @@ export const parseBioData = (rawData: any): BioDataType => {
             Year: rawData.Birthdate.Year,
             Month: rawData.Birthdate.Month,
             Day: rawData.Birthdate.Day,
+
             toString() {
                 return `${rawData.Birthdate.Year.toString().padStart(
                     4,
@@ -35,6 +37,7 @@ export const parseBioData = (rawData: any): BioDataType => {
             Country: rawData.ResidentOf.Country,
             State: rawData.ResidentOf.State,
             City: rawData.ResidentOf.City,
+
             toString() {
                 return `${this.City}, ${this.State}, ${this.Country}`;
             },

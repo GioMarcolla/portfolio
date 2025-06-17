@@ -51,5 +51,9 @@ export const createExperienceDataFactory = (
         };
     }
 
+    data.Location.toString = function() {
+        return `${this.City}, ${this.State}, ${this.Country}`
+    }
+
     return data;
 };

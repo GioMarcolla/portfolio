@@ -4,10 +4,13 @@ import { EducationDataType } from "@/Lib/Types/EducationDataType";
 export function parseEducationData(rawData: any[]): EducationDataType[] {
     return rawData.map((entry) =>
         createEducationDataFactory({
+            id: entry.id,
             Institution: entry.Institution,
-            Country: entry.Country,
-            State: entry.State,
-            City: entry.City,
+            Location: {
+                Country: entry.Location.Country,
+                State: entry.Location.State,
+                City: entry.Location.City,
+            },
             Degree: entry.Degree,
             DegreeShort: entry.DegreeShort,
             Major: entry.Major,
@@ -17,11 +20,13 @@ export function parseEducationData(rawData: any[]): EducationDataType[] {
                 Month: entry.DateStarted?.Month,
                 Day: entry.DateStarted?.Day ?? 0,
             },
-            DateCompleted: {
-                Year: entry.DateCompleted?.Year,
-                Month: entry.DateCompleted?.Month,
-                Day: entry.DateCompleted?.Day ?? 0,
-            },
+            DateCompleted: entry.DateCompleted
+                ? {
+                      Year: entry.DateCompleted.Year,
+                      Month: entry.DateCompleted.Month,
+                      Day: entry.DateCompleted.Day ?? 0,
+                  }
+                : undefined,
             Completed: entry.Completed ?? false,
         })
     );

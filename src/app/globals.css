@@ -87,7 +87,8 @@
 
         /* My variables/overrides */
         --text: #000000;
-        --background: #fff9f3;
+        /* --background: #fff9f3; */
+        --background: #fffcf7;
         --primary: #e02e2e;
         --secondary: #3b3d3f;
         --accent: #f4bf10;
@@ -188,7 +189,8 @@
 
         /* My variables/overrides */
         --text: #ffffff;
-        --background: #1a0e00;
+        /* --background: #1a0e00; */
+        --background: #0f0500;
         --primary: #d11f1f;
         --secondary: #c0c2c4;
         --accent: #efba0b;

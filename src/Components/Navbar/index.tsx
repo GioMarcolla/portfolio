@@ -1,10 +1,12 @@
-import { FC } from "react";
-import ThemeToggleButton from "@/Components/ThemeToggleButton";
+import { BriefcaseBusiness, FolderCog, House, Menu } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FC } from 'react';
 
-import Link from "next/link";
-import { Button } from "../UI/button";
-import { BriefcaseBusiness, FolderCog, House, Menu } from "lucide-react";
-import MenuButton from "../UI/MenuButton";
+import ThemeToggleButton from '@/Components/ThemeToggleButton';
+
+import { Button } from '../UI/button';
+import MenuButton from '../UI/MenuButton';
 
 const index: FC = () => {
     return (
@@ -16,11 +18,12 @@ const index: FC = () => {
             </div>
             <div className="flex flex-col flex-1 justify-between items-center">
                 <div>
-                    <img
-                        src="og-image.png"
-                        height={"48px"}
-                        width={"48px"}
+                    <Image
+                        src={"/assets/images/og-image.png"}
+                        height={48}
+                        width={48}
                         className="dark:invert"
+                        alt="Giovanni Marcolla Logo"
                     />
                 </div>
                 <nav className="flex flex-col gap-2">
@@ -46,18 +49,24 @@ const index: FC = () => {
                 <div>
                     <div>
                         <Button variant={"link"} className="p-1">
-                            <Link href="/" color="text">
-                                <img
-                                    src={"inBug-Black.png"}
+                            <Link href="https://www.linkedin.com/in/giomarcolla/" target="_blank" color="text">
+                                <Image
+                                    src={"/assets/images/inbug-black.png"}
                                     className="dark:invert h-4"
+                                    width={16}
+                                    height={16}
+                                    alt='LinkedIn Logo'
                                 />
                             </Link>
                         </Button>
                         <Button variant={"link"} className="p-1">
-                            <Link href="/" color="text">
-                                <img
-                                    src={"github-mark.png"}
+                            <Link href="https://github.com/GioMarcolla/portfolio" target="_blank" color="text">
+                                <Image
+                                    src={"/assets/images/github-mark.png"}
                                     className="dark:invert h-4"
+                                    width={16}
+                                    height={16}
+                                    alt="GitHub Logo"
                                 />
                             </Link>
                         </Button>

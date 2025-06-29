@@ -1,14 +1,12 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import IntroHero from "@/Components/IntroHero";
 import { FC } from "react";
 
-const Home: FC = () => {
+const HomePage: FC = () => {
     return (
-        <Box>
-            <Flex>
-                <Heading>Home</Heading>
-            </Flex>
-        </Box>
+        <div>
+            <IntroHero />
+        </div>
     );
 };
 
-export default Home;
+export default HomePage;

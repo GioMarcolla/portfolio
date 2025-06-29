@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import './globals.css';
+import "./globals.css";
 
-import { ColorModeProvider } from '@/Lib/Components/UI/ColorMode';
-import { Provider } from '@/Lib/Components/UI/Provider';
+import Navbar from "@/Components/Navbar";
+import ThemeProvider from "@/Components/UI/NextThemeProvider";
 
 export const metadata: Metadata = {
     title: "Giovanni Marcolla - Full-Stack Developer & Educator",
@@ -37,10 +37,22 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={"antialiased"}>
-                <Provider>
-                    <ColorModeProvider>{children}</ColorModeProvider>
-                </Provider>
+            <head></head>
+            {/* CSS fallback for older browser without VH/VW support. */}
+            <body>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    <div className="flex bg-background m-auto w-dvw min-w-dvw min-w-full max-w-dvw h-dvh min-h-dvh min-h-full antialiased">
+                        <Navbar />
+                        <div className="overflow-auto grow-1">
+                            {children}
+                        </div>
+                    </div>
+                </ThemeProvider>
             </body>
         </html>
     );

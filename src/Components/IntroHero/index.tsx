@@ -3,7 +3,7 @@ import StyledIntro from "../StyledIntro";
 
 type Props = {};
 
-const IntroHero = (props: Props) => {
+const IntroHero = ({}: Props) => {
     // const getData = useBioDataStore((state) => state.getData);
     // const [bioData, setBioData] = useState<BioDataType | null>(null);
 

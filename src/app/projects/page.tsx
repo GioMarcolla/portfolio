@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const ProjectsPage = (props: Props) => {
+const ProjectsPage = ({}: Props) => {
     return <div>Projects</div>;
 };
 

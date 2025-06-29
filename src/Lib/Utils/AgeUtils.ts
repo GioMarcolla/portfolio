@@ -1,5 +1,5 @@
 export const calculateAgeFromBirthdateISO = (birthdate: string): number => {
-    const birth = new Date(birthdate + 'T00:00:00Z');
+    const birth = new Date(birthdate);
     const today = new Date();
     let age = today.getFullYear() - birth.getFullYear();
     const m = today.getMonth() - birth.getMonth();

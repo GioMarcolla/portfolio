@@ -18,7 +18,7 @@ const IntroMozaic = ({ className }: Props) => {
                     <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-S0BWUEsSWO5HinuqiJMV2eZLJqTSQR.png"
-                            alt=""
+                            alt="Vaadin Logo"
                             className="w-auto max-w-full h-auto object-contain"
                             height={2000}
                             width={485}
@@ -27,7 +27,7 @@ const IntroMozaic = ({ className }: Props) => {
                     <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/spring-boot-DF1LGa2xOv4U832STDSp1w99Dr1xBJ.png"
-                            alt=""
+                            alt="Spring Boot Logo"
                             className="w-auto max-w-full h-auto object-contain"
                             height={2000}
                             width={515}
@@ -36,32 +36,40 @@ const IntroMozaic = ({ className }: Props) => {
                 </div>
                 <div className="relative flex-20">
                     <div className="bg-primary-300 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
-                        <img
+                        <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/D3-m8o5WIxBz2bqZqPZu8e9i1qkdvIVxE.jpg"
-                            alt=""
+                            alt="Mobile app development for project Sure!"
                             className="rounded-2xl w-full h-full object-cover"
+                            width={1220}
+                            height={1220}
                         />
                     </div>
                 </div>
                 <div className="flex flex-col flex-10 gap-2">
                     <div className="flex-2 bg-secondary-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
-                        <img
+                        <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/E3-qPmAfbgzUYOw0jpAGrVeqR0eYL3HAO.jpg"
-                            alt=""
+                            alt="Drone workshop in China by PX4 Auto Pilot"
                             className="rounded-2xl w-full h-full object-cover"
+                            width={1080}
+                            height={1080}
                         />
                     </div>
                     <div className="flex-1 content-end">
                         <div className="flex flex-col justify-around items-end gap-2 bg-transparent w-full h-full">
-                            <img
+                            <Image
                                 src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/js-html-css-ikV2h7FZf9CbU7IwL4UmoE8L3dBYZ8.png"
-                                alt=""
+                                alt="JS, HTML, CSS Logo"
                                 className="h-[50%] object-contain"
+                                width={1087}
+                                height={395}
                             />
-                            <img
+                            <Image
                                 src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/next-js-O6IESg14n7RsEjFRbCeEL6B2H6wWLQ.png"
-                                alt=""
+                                alt="Next.js Logo"
                                 className="max-h-[25%] object-contain"
+                                width={2000}
+                                height={404}
                             />
                         </div>
                     </div>
@@ -71,25 +79,31 @@ const IntroMozaic = ({ className }: Props) => {
                 <div className="flex flex-col flex-2 gap-2">
                     <div className="flex flex-row flex-2 gap-2 max-h-[66%]">
                         <div className="flex-2 bg-secondary-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
-                            <img
+                            <Image
                                 src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/P3-QhdrThzbUC35MMTxvybvqIymbHbFQ1.jpg"
-                                alt=""
+                                alt="Taking my dogo to the mall for a walk"
                                 className="rounded-2xl w-full h-full object-cover"
+                                width={530}
+                                height={530}
                             />
                         </div>
                         <div className="flex flex-col flex-1 gap-2">
                             <div className="flex-2 bg-background-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
-                                <img
+                                <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/E1-tayxtMS2tjE2WcHnTWqw0A7VdlDshL.jpg"
-                                    alt=""
+                                    alt="3D Printer maintenance"
                                     className="rounded-2xl w-full h-full object-cover"
+                                    width={767}
+                                    height={767}
                                 />
                             </div>
                             <div className="flex-2 bg-background-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
-                                <img
+                                <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/D1-Ys0lHUvFwk3W9IPmKz0DUp1uk29bSr.jpg"
-                                    alt=""
+                                    alt="Python edge detection with OpenCV"
                                     className="rounded-2xl w-full h-full object-cover"
+                                    width={1142}
+                                    height={1142}
                                 />
                             </div>
                         </div>
@@ -99,7 +113,7 @@ const IntroMozaic = ({ className }: Props) => {
                             <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
                                 <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/typescript-seeklogo-aCUqapylBJSIOck5Ui1icLSLgyodRd.png"
-                                    alt=""
+                                    alt="TypeScript Logo"
                                     className="w-auto h-auto max-h-[80%] object-contain"
                                     width={2000}
                                     height={2000}
@@ -108,7 +122,7 @@ const IntroMozaic = ({ className }: Props) => {
                             <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
                                 <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/java-qf1MWvDKMzRaUiyM3Z35NHI7oRb6m0.png"
-                                    alt=""
+                                    alt="Java Logo"
                                     className="w-auto h-auto max-h-full object-contain"
                                     width={2000}
                                     height={1077}
@@ -117,7 +131,7 @@ const IntroMozaic = ({ className }: Props) => {
                             <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
                                 <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/postgresql-bZMQsUYAEqG7uoF8CPsTZqs9pgFAAH.png"
-                                    alt=""
+                                    alt="PostgreSQL Logo"
                                     className="mb-[-5%] w-auto h-auto max-h-full object-contain"
                                     width={2000}
                                     height={484}
@@ -128,10 +142,12 @@ const IntroMozaic = ({ className }: Props) => {
                 </div>
                 <div className="flex-1">
                     <div className="flex-2 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden bg-accent-300 container">
-                        <img
+                        <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/T2-znWF4bXETbP4NNI4DFgQKBmhNprWYg.jpg"
-                            alt=""
+                            alt="Teaching eletronics in China"
                             className="rounded-2xl w-full h-full object-cover"
+                            width={1080}
+                            height={1080}
                         />
                     </div>
                 </div>

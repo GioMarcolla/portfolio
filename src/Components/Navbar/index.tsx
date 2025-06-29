@@ -48,7 +48,7 @@ const index: FC = () => {
                         <Button variant={"link"} className="p-1">
                             <Link href="/" color="text">
                                 <img
-                                    src={"inBug-Black.png"}
+                                    src={"inbug-black.png"}
                                     className="dark:invert h-4"
                                 />
                             </Link>

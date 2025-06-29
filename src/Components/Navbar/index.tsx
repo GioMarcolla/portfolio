@@ -19,7 +19,7 @@ const index: FC = () => {
             <div className="flex flex-col flex-1 justify-between items-center">
                 <div>
                     <Image
-                        src="og-image.png"
+                        src={"/assets/images/og-image.png"}
                         height={48}
                         width={48}
                         className="dark:invert"
@@ -51,7 +51,7 @@ const index: FC = () => {
                         <Button variant={"link"} className="p-1">
                             <Link href="https://www.linkedin.com/in/giomarcolla/" target="_blank" color="text">
                                 <Image
-                                    src={"/inbug-black.png"}
+                                    src={"/assets/images/inbug-black.png"}
                                     className="dark:invert h-4"
                                     width={16}
                                     height={16}
@@ -62,7 +62,7 @@ const index: FC = () => {
                         <Button variant={"link"} className="p-1">
                             <Link href="https://github.com/GioMarcolla/portfolio" target="_blank" color="text">
                                 <Image
-                                    src={"/github-mark.png"}
+                                    src={"/assets/images/github-mark.png"}
                                     className="dark:invert h-4"
                                     width={16}
                                     height={16}

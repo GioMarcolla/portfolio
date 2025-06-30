@@ -15,7 +15,7 @@ const StyledIntro = ({ className }: Props) => {
     return (
         <div
             className={cn(
-                "flex flex-col justify-between font-rubik line text-lg self-center max-w-[640px] sm",
+                "flex flex-col justify-between font-rubik line text-lg self-center max-w-[640px] ",
                 className
             )}
         >
@@ -64,9 +64,10 @@ const StyledIntro = ({ className }: Props) => {
             <div className="flex justify-center gap-4 mt-8">
                 <Link href={"/projects"}>
                     <Button
-                        className={cn("bg-secondary-300 p-8", {
-                            hover: "bg-accent",
-                        })}
+                        className={cn(
+                            "bg-secondary-300 p-8",
+                            "hover:bg-accent"
+                        )}
                     >
                         <p className="font-inter font-medium text-text">
                             Checkout my projects?
@@ -74,11 +75,7 @@ const StyledIntro = ({ className }: Props) => {
                     </Button>
                 </Link>
                 <Link href={"/experience"}>
-                    <Button
-                        className={cn("p-8", {
-                            hover: "bg-accent",
-                        })}
-                    >
+                    <Button className={cn("p-8", "hover:bg-accent")}>
                         <p className="font-inter font-medium text-text">
                             Work Experience
                         </p>

@@ -16,22 +16,12 @@ const IntroHero = ({}: Props) => {
         <div
             className={cn(
                 "flex flex-col gap-[10dvh] p-[5dvh] h-[200dvh] min-h-[200dvh]",
-                {
-                    xl: "!flex-row !gap-[5dvh] !h-dvh !min-h-dvh !max-h-dvh",
-                    "2xl": "justify-around !gap-[unset]",
-                }
+                "xl:!flex-row xl:gap-[5dvh] xl:h-dvh xl:min-h-dvh xl:max-h-dvh ",
+                "2xl:justify-around 2xl:!gap-[unset]"
             )}
         >
-            <StyledIntro
-                className={cn("flex-9 max-h-[90dvh]", {
-                    xl: "flex-1",
-                })}
-            />
-            <IntroMozaic
-                className={cn("flex-11 max-h-[90dvh]", {
-                    xl: "flex-1",
-                })}
-            />
+            <StyledIntro className={cn("flex-9 max-h-[90dvh]", "xl:flex-1")} />
+            <IntroMozaic className={cn("flex-11 max-h-[90dvh]", "xl:flex-1")} />
         </div>
     );
 };

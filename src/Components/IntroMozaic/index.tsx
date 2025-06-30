@@ -10,28 +10,25 @@ const IntroMozaic = ({ className }: Props) => {
         <div
             className={cn(
                 "max-w-[640px] self-center flex flex-col gap-2  w-full h-full max-h-full",
-                className,
-                {
-                    "2xl": "!max-w-[800px]",
-                }
+                "2xl:!max-w-[800px]",
+                className
             )}
         >
             <div className="flex flex-row flex-1 gap-2 max-h-[50%]">
                 <div
                     className={cn(
                         "flex flex-col flex-3 self-end gap-4 bg-transparent h-[70%] max-h-[70%] overflow-hidden",
-                        {
-                            "2xl": "flex-2",
-                        }
+                        "2xl:flex-2"
                     )}
                 >
                     <div className="relative flex flex-1 w-full h-full">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-S0BWUEsSWO5HinuqiJMV2eZLJqTSQR.png"
                             alt="Vaadin Logo"
-                            className={cn("h-auto object-contain", {
-                                dark: "hidden",
-                            })}
+                            className={cn(
+                                "h-auto object-contain",
+                                "dark:hidden"
+                            )}
                             // height={2000}
                             // width={485}
                             fill
@@ -39,9 +36,10 @@ const IntroMozaic = ({ className }: Props) => {
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-inverted-DAvtw7VGekFbk72B15BuEF9HOMNjJj.png"
                             alt="Vaadin Logo"
-                            className={cn("hidden h-auto object-contain", {
-                                dark: "block",
-                            })}
+                            className={cn(
+                                "hidden h-auto object-contain",
+                                "dark:block"
+                            )}
                             // height={2000}
                             // width={485}
                             fill
@@ -91,9 +89,10 @@ const IntroMozaic = ({ className }: Props) => {
                             <Image
                                 src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/next-js-O6IESg14n7RsEjFRbCeEL6B2H6wWLQ.png"
                                 alt="Next.js Logo"
-                                className={cn("max-h-[20%] object-contain", {
-                                    dark: "!invert",
-                                })}
+                                className={cn(
+                                    "max-h-[20%] object-contain",
+                                    "dark:!invert"
+                                )}
                                 width={2000}
                                 height={404}
                             />
@@ -160,9 +159,7 @@ const IntroMozaic = ({ className }: Props) => {
                                     alt="PostgreSQL Logo"
                                     className={cn(
                                         "mb-[-7%] w-auto h-full max-h-full object-contain",
-                                        {
-                                            dark: "hidden",
-                                        }
+                                        "dark:hidden"
                                     )}
                                     width={2000}
                                     height={484}
@@ -172,9 +169,7 @@ const IntroMozaic = ({ className }: Props) => {
                                     alt="PostgreSQL Logo"
                                     className={cn(
                                         "hidden mb-[-7%] w-auto h-full max-h-full object-contain",
-                                        {
-                                            dark: "block",
-                                        }
+                                        "dark:block"
                                     )}
                                     width={2000}
                                     height={484}

@@ -15,7 +15,7 @@ const StyledIntro = ({ className }: Props) => {
     return (
         <div
             className={cn(
-                "flex flex-col justify-between font-rubik line text-lg self-center max-w-[640px] sm",
+                "flex flex-col justify-between font-rubik line text-lg self-center max-w-[640px] ",
                 className
             )}
         >
@@ -49,9 +49,9 @@ const StyledIntro = ({ className }: Props) => {
                 </p>
                 <p className="mt-8">
                     With a strong background in software, embedded systems,
-                    education, and product development life-cycle, I’ve led projects
-                    across Brazil, Thailand, and China—bringing teams together
-                    and delivering real-world solutions.
+                    education, and product development life-cycle, I’ve led
+                    projects across Brazil, Thailand, and China—bringing teams
+                    together and delivering real-world solutions.
                     <br />
                     <br />
                     Beyond tech, I’m into Formula 1, BBQ cooking, anime, sci-fi,
@@ -63,14 +63,19 @@ const StyledIntro = ({ className }: Props) => {
 
             <div className="flex justify-center gap-4 mt-8">
                 <Link href={"/projects"}>
-                    <Button className="bg-secondary-300 hover:bg-accent p-8">
+                    <Button
+                        className={cn(
+                            "bg-secondary-300 p-8",
+                            "hover:bg-accent"
+                        )}
+                    >
                         <p className="font-inter font-medium text-text">
                             Checkout my projects?
                         </p>
                     </Button>
                 </Link>
                 <Link href={"/experience"}>
-                    <Button className="hover:bg-accent p-8">
+                    <Button className={cn("p-8", "hover:bg-accent")}>
                         <p className="font-inter font-medium text-text">
                             Work Experience
                         </p>

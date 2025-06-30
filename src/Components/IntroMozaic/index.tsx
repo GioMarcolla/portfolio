@@ -9,28 +9,50 @@ const IntroMozaic = ({ className }: Props) => {
     return (
         <div
             className={cn(
-                "max-w-[640px] 2xl:!max-w-[800px] self-center flex flex-col gap-2  w-full h-full max-h-full",
+                "max-w-[640px] self-center flex flex-col gap-2  w-full h-full max-h-full",
+                "2xl:!max-w-[800px]",
                 className
             )}
         >
             <div className="flex flex-row flex-1 gap-2 max-h-[50%]">
-                <div className="flex flex-col flex-3 2xl:flex-2 self-end gap-4 bg-transparent h-[70%] max-h-[70%] overflow-hidden">
-                    <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
+                <div
+                    className={cn(
+                        "flex flex-col flex-3 self-end gap-4 bg-transparent h-[70%] max-h-[70%] overflow-hidden",
+                        "2xl:flex-2"
+                    )}
+                >
+                    <div className="relative flex flex-1 w-full h-full">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-S0BWUEsSWO5HinuqiJMV2eZLJqTSQR.png"
                             alt="Vaadin Logo"
-                            className="w-auto max-w-full h-auto object-contain"
-                            height={2000}
-                            width={485}
+                            className={cn(
+                                "h-auto object-contain",
+                                "dark:hidden"
+                            )}
+                            // height={2000}
+                            // width={485}
+                            fill
+                        />
+                        <Image
+                            src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-inverted-DAvtw7VGekFbk72B15BuEF9HOMNjJj.png"
+                            alt="Vaadin Logo"
+                            className={cn(
+                                "hidden h-auto object-contain",
+                                "dark:block"
+                            )}
+                            // height={2000}
+                            // width={485}
+                            fill
                         />
                     </div>
-                    <div className="flex flex-1 items-end w-auto h-full max-h-full basis-auto shrink">
+                    <div className="relative flex flex-1 w-full h-full">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/spring-boot-DF1LGa2xOv4U832STDSp1w99Dr1xBJ.png"
                             alt="Spring Boot Logo"
-                            className="w-auto max-w-full h-auto object-contain"
-                            height={2000}
-                            width={515}
+                            className="h-auto object-contain"
+                            // height={2000}
+                            // width={515}
+                            fill
                         />
                     </div>
                 </div>
@@ -58,16 +80,19 @@ const IntroMozaic = ({ className }: Props) => {
                     <div className="flex-1 content-end">
                         <div className="flex flex-col justify-around items-end gap-2 bg-transparent w-full h-full">
                             <Image
-                                src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/js-html-css-ikV2h7FZf9CbU7IwL4UmoE8L3dBYZ8.png"
+                                src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/js-html-css-QKVqxcV10NyaMkKOeiOVjJDGSbBfYB.png"
                                 alt="JS, HTML, CSS Logo"
-                                className="h-[50%] object-contain"
+                                className="h-[40%] object-contain"
                                 width={1087}
                                 height={395}
                             />
                             <Image
                                 src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/next-js-O6IESg14n7RsEjFRbCeEL6B2H6wWLQ.png"
                                 alt="Next.js Logo"
-                                className="max-h-[25%] object-contain"
+                                className={cn(
+                                    "max-h-[20%] object-contain",
+                                    "dark:!invert"
+                                )}
                                 width={2000}
                                 height={404}
                             />
@@ -132,7 +157,20 @@ const IntroMozaic = ({ className }: Props) => {
                                 <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/postgresql-bZMQsUYAEqG7uoF8CPsTZqs9pgFAAH.png"
                                     alt="PostgreSQL Logo"
-                                    className="mb-[-5%] w-auto h-auto max-h-full object-contain"
+                                    className={cn(
+                                        "mb-[-7%] w-auto h-full max-h-full object-contain",
+                                        "dark:hidden"
+                                    )}
+                                    width={2000}
+                                    height={484}
+                                />
+                                <Image
+                                    src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/postgresql-inverted-oE0cvzaj1xGRbvAxyWOJyAnxTB9Ilv.png"
+                                    alt="PostgreSQL Logo"
+                                    className={cn(
+                                        "hidden mb-[-7%] w-auto h-full max-h-full object-contain",
+                                        "dark:block"
+                                    )}
                                     width={2000}
                                     height={484}
                                 />

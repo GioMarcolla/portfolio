@@ -1,3 +1,4 @@
+import { cn } from "@/Lib/Utils/shadCNUtils";
 import IntroMozaic from "../IntroMozaic";
 import StyledIntro from "../StyledIntro";
 
@@ -12,9 +13,25 @@ const IntroHero = ({}: Props) => {
     // }, [getData]);
 
     return (
-        <div className="flex xl:!flex-row flex-col 2xl:justify-around gap-[10dvh] 2xl:!gap-[unset] xl:!gap-[5dvh] p-[5dvh] h-[200dvh] xl:!h-dvh min-h-[200dvh] xl:!min-h-dvh xl:!max-h-dvh">
-            <StyledIntro className="flex-9 xl:flex-1 max-h-[90dvh]" />
-            <IntroMozaic className="flex-11 xl:flex-1 max-h-[90dvh]" />
+        <div
+            className={cn(
+                "flex flex-col gap-[10dvh] p-[5dvh] h-[200dvh] min-h-[200dvh]",
+                {
+                    xl: "!flex-row !gap-[5dvh] !h-dvh !min-h-dvh !max-h-dvh",
+                    "2xl": "justify-around !gap-[unset]",
+                }
+            )}
+        >
+            <StyledIntro
+                className={cn("flex-9 max-h-[90dvh]", {
+                    xl: "flex-1",
+                })}
+            />
+            <IntroMozaic
+                className={cn("flex-11 max-h-[90dvh]", {
+                    xl: "flex-1",
+                })}
+            />
         </div>
     );
 };

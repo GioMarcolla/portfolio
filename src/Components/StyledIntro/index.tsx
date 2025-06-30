@@ -15,7 +15,7 @@ const StyledIntro = ({ className }: Props) => {
     return (
         <div
             className={cn(
-                "flex flex-col justify-between font-rubik line text-lg self-center max-w-[640px] ",
+                "flex flex-col justify-between font-rubik line text-lg self-center max-w-[640px]",
                 className
             )}
         >

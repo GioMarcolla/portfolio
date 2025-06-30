@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning className="text-[8px] md:text-[16px]">
             <head></head>
             {/* CSS fallback for older browser without VH/VW support. */}
             <body>

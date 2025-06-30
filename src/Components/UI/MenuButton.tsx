@@ -2,16 +2,23 @@ import { LucideIcon } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 import { Button } from "./button";
 import Link from "next/link";
+import { cn } from "@/Lib/Utils/shadCNUtils";
 
 type Props = {
     icon?: LucideIcon;
     tooltipText?: string;
     path: string;
     name: string;
-};
+} & React.ComponentProps<"button">;
 
-const MenuButton = ({ icon: Icon, tooltipText, path, name }: Props) => {
-    const iconElement = Icon ? <Icon className="!w-6 !h-6" /> : null;
+const MenuButton = ({
+    icon: Icon,
+    tooltipText,
+    path,
+    name,
+    className,
+}: Props) => {
+    const iconElement = Icon ? <Icon className={"!w-full !h-auto"} /> : null;
 
     return (
         <>
@@ -20,7 +27,10 @@ const MenuButton = ({ icon: Icon, tooltipText, path, name }: Props) => {
                     <TooltipTrigger asChild>
                         <Button
                             variant="link"
-                            className="px-2 py-1 font-bold text-text"
+                            className={cn(
+                                "px-2 py-1 font-bold text-text",
+                                className
+                            )}
                         >
                             <Link href={path} color="text">
                                 {iconElement || name}
@@ -34,7 +44,7 @@ const MenuButton = ({ icon: Icon, tooltipText, path, name }: Props) => {
             ) : (
                 <Button
                     variant="link"
-                    className="px-2 py-1 font-bold text-text"
+                    className={cn("px-2 py-1 font-bold text-text", className)}
                 >
                     <Link href={path} color="text">
                         {iconElement || name}

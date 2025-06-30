@@ -33,7 +33,7 @@ const MobileNavbar = ({ children }: PropsWithChildren) => {
                 setCurrentTimeout(null);
             }
         };
-    }, [open]);
+    }, [open, currentTimeout]);
 
     return (
         <div

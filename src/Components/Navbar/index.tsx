@@ -12,7 +12,7 @@ import MenuButton from "../UI/MenuButton";
 import FixedNavbar from "./FixedNavbar";
 import MobileNavbar from "./MobileNavbar";
 
-const index: FC = () => {
+const Navbar: FC = () => {
     const [isMdUp, setIsMdUp] = useState<boolean>(false);
 
     useEffect(() => {
@@ -106,4 +106,4 @@ const index: FC = () => {
     );
 };
 
-export default index;
+export default Navbar;

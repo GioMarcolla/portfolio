@@ -7,7 +7,7 @@ type Props = {
     data: ExperienceDataType;
 } & ComponentPropsWithoutRef<typeof Primitive.div>;
 
-const ExperienceMozaic: FC<Props> = ({ data }: Props) => {
+const ExperienceMozaic: FC<Props> = ({ }: Props) => {
     return <div className={cn("")}>placeholder</div>;
 };
 

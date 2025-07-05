@@ -31,9 +31,9 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                     .filter(Boolean)
                     .map((topic: string, index: number) => {
                         return (
-                            <div className="flex flex-1">
+                            <div key={index} className="flex flex-1">
                                 <ChevronRight size={24} className="mt-0.5" />
-                                <p key={index} className="flex-1">
+                                <p className="flex-1">
                                     {topic.trim()}
                                 </p>
                             </div>

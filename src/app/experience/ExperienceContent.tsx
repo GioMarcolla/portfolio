@@ -2,7 +2,6 @@ import ExperienceDetails from "@/Components/ExperienceDetails";
 import ExperienceMozaic from "@/Components/ExperienceMozaic";
 import { ExperienceDataType } from "@/Lib/Types/ExperienceDataType";
 import { cn } from "@/Lib/Utils/shadCNUtils";
-import { ChevronRight } from "lucide-react";
 import { FC } from "react";
 
 type Props = {

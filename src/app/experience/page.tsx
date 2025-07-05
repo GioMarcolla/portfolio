@@ -1,14 +1,15 @@
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/UI/tabs";
-import { useExperienceDataStore } from "@/Lib/Stores/ExperienceDataStore";
+import { useExperienceStore } from "@/Lib/Stores/ExperienceStore";
 import { ExperienceDataType } from "@/Lib/Types/ExperienceDataType";
 import React, { useEffect, useState } from "react";
+import ExperienceContent from "./ExperienceContent";
 
 type Props = {};
 
 const ExperiencePage = ({}: Props) => {
-    const getData = useExperienceDataStore((state) => state.getData);
+    const getData = useExperienceStore((state) => state.getData);
     const [ExperienceData, setExperienceData] = useState<
         ExperienceDataType[] | null
     >(null);
@@ -18,8 +19,23 @@ const ExperiencePage = ({}: Props) => {
     }, [getData]);
 
     return (
-        <Tabs defaultValue="account" className="w-full">
-            <TabsList className="flex flex-row-reverse w-full">
+        <Tabs
+            // Use a key to force remount when ExperienceData changes
+            key={
+                ExperienceData
+                    ? ExperienceData.map((exp) => exp.id).join("-")
+                    : "empty"
+            }
+            defaultValue={
+                ExperienceData && ExperienceData.length > 0
+                    ? ExperienceData[
+                          ExperienceData.length - 1
+                      ].JobTitle.replaceAll(" ", "-").toLowerCase()
+                    : ""
+            }
+            className="min-w-full"
+        >
+            <TabsList className="flex flex-row-reverse gap-2 bg-transparent p-4 w-full max-w-full h-auto max-h-16 overflow-scroll no-scrollbar">
                 {ExperienceData?.map((exp) => {
                     return (
                         <TabsTrigger
@@ -28,8 +44,9 @@ const ExperiencePage = ({}: Props) => {
                                 " ",
                                 "-"
                             ).toLowerCase()}
+                            className="bg-background-50 data-[state=active]:bg-accent dark:data-[state=active]:bg-primary shadow min-w-fit h-auto"
                         >
-                            {exp.JobTitle}
+                            <p className="text-lg">{exp.JobTitle}</p>
                         </TabsTrigger>
                     );
                 })}
@@ -39,8 +56,9 @@ const ExperiencePage = ({}: Props) => {
                     <TabsContent
                         key={`exp-${exp.id}`}
                         value={exp.JobTitle.replaceAll(" ", "-").toLowerCase()}
+                        className="max-h-[calc(100dvh-4.5rem)] overflow-scroll"
                     >
-                        {exp.JobTitle}
+                        <ExperienceContent data={exp} />
                     </TabsContent>
                 );
             })}

@@ -1,7 +1,13 @@
-import axios from "axios";
+import axios, { type AxiosInstance } from "axios";
 
-const api = axios.create({
-    baseURL: "https://portfolio-api-9yb1.onrender.com",
+const api: AxiosInstance = axios.create({
+    baseURL:
+        process.env.NEXT_PUBLIC_MODE === "DEV"
+            ? "http://localhost:3001"
+            : process.env.NEXT_PUBLIC_API_URL,
+    headers: {
+        "x-api-key": process.env.NEXT_PUBLIC_API_KEY || "",
+    },
     timeout: 3000,
 });
 

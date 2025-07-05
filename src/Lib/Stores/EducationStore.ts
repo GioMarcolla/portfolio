@@ -2,19 +2,19 @@ import axios from 'axios';
 import { create } from 'zustand';
 
 import { createLazyStore } from '@/Lib/Factories/LazyStoreFactory';
-import { parseExperienceData } from '@/Lib/Parsers/ExperienceDataParser';
-import { ExperienceDataType } from '@/Lib/Types/ExperienceDataType';
+import { parseEducationData } from '@/Lib/Parsers/EducationDataParser';
+import { EducationDataType } from '@/Lib/Types/EducationDataType';
 import api from '@/Lib/Utils/AxiosUtils';
 
-export const useExperienceDataStore = create(
-    createLazyStore<ExperienceDataType[]>(async () => {
+export const useEducationDataStore = create(
+    createLazyStore<EducationDataType[]>(async () => {
         try {
-            const res = await api.get("/experienceData");
+            const res = await api.get("/education");
             console.log(
                 "Bio data updated at " + new Date().toLocaleDateString("en-us")
             );
 
-            return parseExperienceData(res.data);
+            return parseEducationData(res.data);
         } catch (err) {
             if (axios.isAxiosError(err)) {
                 console.error(err.message);

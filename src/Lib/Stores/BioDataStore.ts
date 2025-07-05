@@ -5,10 +5,10 @@ import { BioDataType } from "@/Lib/Types/BioDataType";
 import { parseBioData } from "@/Lib/Parsers/BioDataParser";
 import axios from "axios";
 
-export const useBioDataStore = create(
+export const useBiodataStore = create(
     createLazyStore<BioDataType>(async () => {
         try {
-            const res = await api.get("/bioData");
+            const res = await api.get("/biodata");
             console.log("Bio data updated at " + new Date().toLocaleDateString("en-us"))
 
             return parseBioData(res.data);

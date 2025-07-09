@@ -1,15 +1,18 @@
-import axios from 'axios';
-import { create } from 'zustand';
+import axios from "axios";
+import { create } from "zustand";
 
-import { createLazyStore } from '@/Lib/Factories/LazyStoreFactory';
-import { parseEducation } from '@/Lib/Parsers/EducationParser';
-import api from '@/Lib/Utils/AxiosUtils';
-import { EducationType } from '@/Lib/zod/schemas';
+import { createLazyStore } from "@/Lib/Factories/LazyStoreFactory";
+import { parseEducation } from "@/Lib/Parsers/EducationParser";
+import api from "@/Lib/Utils/AxiosUtils";
+import { EducationHelpers, EducationType } from "@/Lib/zod/schemas";
+import { DeepOmit } from "../Utils/TypeUtils";
 
 export const useEducationDataStore = create(
     createLazyStore<EducationType[]>(async () => {
         try {
-            const res = await api.get("/education");
+            const res = await api.get<
+                DeepOmit<EducationType, EducationHelpers>[]
+            >("/education");
 
             return parseEducation(res.data);
         } catch (err) {

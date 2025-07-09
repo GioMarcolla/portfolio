@@ -1,17 +1,35 @@
 "use client";
 
 import Link from "next/link";
-import React, { ComponentPropsWithoutRef } from "react";
+import React, { ComponentPropsWithoutRef, useEffect, useState } from "react";
 import { Button } from "../UI/button";
 import { useTheme } from "next-themes";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { Primitive } from "@radix-ui/react-primitive";
 import { ArrowRight } from "lucide-react";
+import { BiodataType } from "@/Lib/zod/schemas";
+import { useBiodataStore } from "@/Lib/Stores/BiodataStore";
 
 type Props = {} & ComponentPropsWithoutRef<typeof Primitive.div>;
 
 const StyledIntro = ({ className }: Props) => {
     const { theme, systemTheme } = useTheme();
+    const getBiodata = useBiodataStore((state) => state.getData);
+
+    const [Biodata, setBiodata] = useState<BiodataType | null>(null);
+
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        getBiodata().then(setBiodata).catch(console.error);
+    }, [getBiodata]);
+
+    // Required to properly set the theme after mount due to SSR
+    useEffect(() => {
+        setIsDark(
+            theme === "dark" || (theme === "system" && systemTheme === "dark")
+        );
+    }, [theme, systemTheme, setIsDark]);
 
     return (
         <div
@@ -22,24 +40,25 @@ const StyledIntro = ({ className }: Props) => {
         >
             <div>
                 <h1 className="font-inter font-extrabold text-6xl tracking-wider space">
-                    {"Giovanni (Gio)"}
+                    {`${Biodata?.Name.First || "Giovanni"} (${
+                        Biodata?.Nickname || "Gio"
+                    })`}
                 </h1>
                 <h1 className="font-inter font-extrabold text-6xl tracking-wider space">
-                    {"Marcolla (纪欧)"}
+                    {`${Biodata?.Name.Last || "Marcolla"} (纪欧)`}
                 </h1>
                 <br />
                 <p className="font-black text-2xl">
                     <span className="bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 text-transparent text-3xl">
                         Multidisciplinary{" "}
                     </span>
-                    <span>Computer Engineer </span>
+                    <span>{Biodata?.Profession || "Computer Engineer"} </span>
                     <br />
                     <span>Building{"   "} </span>
                     <span
                         className="text-transparent text-3xl italic"
                         style={
-                            theme === "dark" ||
-                            (theme === "system" && systemTheme === "dark")
+                            isDark
                                 ? { WebkitTextStroke: "1px white" }
                                 : { WebkitTextStroke: "1px black" }
                         }

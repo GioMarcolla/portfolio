@@ -10,14 +10,14 @@ import { ExperienceType } from "@/Lib/zod/schemas";
 type Props = {};
 
 const ExperiencePage = ({}: Props) => {
-    const getData = useExperienceStore((state) => state.getData);
+    const getExperience = useExperienceStore((state) => state.getData);
     const [ExperienceData, setExperienceData] = useState<
         ExperienceType[] | null
     >(null);
 
     useEffect(() => {
-        getData().then(setExperienceData).catch(console.error);
-    }, [getData]);
+        getExperience().then(setExperienceData).catch(console.error);
+    }, [getExperience]);
 
     return (
         <Tabs

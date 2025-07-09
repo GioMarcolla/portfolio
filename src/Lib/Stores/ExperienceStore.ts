@@ -11,9 +11,7 @@ export const useExperienceStore = create(
     createLazyStore<ExperienceType[]>(async () => {
         try {
             const res = await api.get<DeepOmit<ExperienceType, ExperienceHelpers>[]>("/experience");
-            console.log(
-                "Bio data updated at " + new Date().toLocaleDateString("en-us")
-            );
+
 
             return parseExperience(res.data);
         } catch (err) {

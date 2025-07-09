@@ -10,9 +10,6 @@ export const useEducationDataStore = create(
     createLazyStore<EducationType[]>(async () => {
         try {
             const res = await api.get("/education");
-            console.log(
-                "Bio data updated at " + new Date().toLocaleDateString("en-us")
-            );
 
             return parseEducation(res.data);
         } catch (err) {

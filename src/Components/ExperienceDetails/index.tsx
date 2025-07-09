@@ -1,26 +1,25 @@
-import { ExperienceDataType } from "@/Lib/Types/ExperienceDataType";
 import { ChevronRight } from "lucide-react";
 import { ComponentPropsWithoutRef, FC } from "react";
 import { Primitive } from "@radix-ui/react-primitive";
 import { cn } from "@/Lib/Utils/shadCNUtils";
+import { ExperienceType } from "@/Lib/zod/schemas";
 
 type Props = {
-    data: ExperienceDataType;
+    data: ExperienceType;
 } & ComponentPropsWithoutRef<typeof Primitive.div>;
 
 const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
     return (
-        <div
-            className={cn(
-                "flex flex-col gap-8 font-rubik",
-                className
-            )}
-        >
+        <div className={cn("flex flex-col gap-8 font-rubik", className)}>
             <div>
                 <h1 className="font-inter font-extrabold text-3xl tracking-wider space">
-                    {data.JobTitle} @ {data.CompanyName}
+                    {data.JobTitle}{" "}
+                    <span className="bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 text-transparent">
+                        @
+                    </span>{" "}
+                    {data.CompanyName}
                 </h1>
-                <p>Presencial - {`${data.JobType}`}</p>
+                <p>Presential - {`${data.JobType}`}</p>
                 <p>{`${data.Location}`}</p>
                 <p>
                     {`${data.DateStarted}`} - {`${data.DateEnd || "Current"}`}
@@ -32,10 +31,8 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                     .map((topic: string, index: number) => {
                         return (
                             <div key={index} className="flex flex-1">
-                                <ChevronRight size={24} className="mt-0.5" />
-                                <p className="flex-1">
-                                    {topic.trim()}
-                                </p>
+                                <ChevronRight size={24} className="text-amber-400 dark:text-amber-300" />
+                                <p className="flex-1">{topic.trim()}</p>
                             </div>
                         );
                     })}

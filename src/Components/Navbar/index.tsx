@@ -40,7 +40,10 @@ const Navbar: FC = () => {
                         alt="Giovanni Marcolla Logo"
                     />
                 </div>
-                <nav className="flex flex-col items-center gap-2">
+                <nav
+                    data-slot="active"
+                    className="flex flex-col items-center gap-2"
+                >
                     <MenuButton
                         icon={House}
                         tooltipText={"Home"}

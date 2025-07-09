@@ -57,7 +57,7 @@ const IntroMozaic = ({ className }: Props) => {
                     </div>
                 </div>
                 <div className="relative flex-20">
-                    <div className="bg-primary-300 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+2px)] md:rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
+                    <div className="bg-amber-300 pr-0.5 pb-0.5 rounded-2xl rounded-br-[calc(1rem+1px)] md:rounded-br-[calc(1rem+2px)] w-full h-full overflow-hidden container">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/D3-m8o5WIxBz2bqZqPZu8e9i1qkdvIVxE.jpg"
                             alt="Mobile app development for project Sure!"
@@ -68,7 +68,7 @@ const IntroMozaic = ({ className }: Props) => {
                     </div>
                 </div>
                 <div className="flex flex-col flex-10 gap-2">
-                    <div className="flex-2 bg-secondary-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+2px)] md:rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
+                    <div className="flex-2 bg-rose-400 pr-0.5 pb-0.5 rounded-2xl rounded-br-[calc(1rem+1px)] md:rounded-br-[calc(1rem+2px)] w-full h-full overflow-hidden container">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/E3-qPmAfbgzUYOw0jpAGrVeqR0eYL3HAO.jpg"
                             alt="Drone workshop in China by PX4 Auto Pilot"
@@ -103,7 +103,7 @@ const IntroMozaic = ({ className }: Props) => {
             <div className="flex flex-row flex-1 gap-2 max-h-[50%]">
                 <div className="flex flex-col flex-2 gap-2">
                     <div className="flex flex-row flex-2 gap-2 max-h-[66%]">
-                        <div className="flex-2 bg-secondary-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+2px)] md:rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
+                        <div className="flex-2 bg-rose-500 dark:bg-rose-400 pr-0.5 pb-0.5 rounded-2xl rounded-br-[calc(1rem+1px)] md:rounded-br-[calc(1rem+2px)] w-full h-full overflow-hidden container">
                             <Image
                                 src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/P3-QhdrThzbUC35MMTxvybvqIymbHbFQ1.jpg"
                                 alt="Taking my dogo to the mall for a walk"
@@ -113,7 +113,7 @@ const IntroMozaic = ({ className }: Props) => {
                             />
                         </div>
                         <div className="flex flex-col flex-1 gap-2">
-                            <div className="flex-2 bg-background-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+2px)] md:rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
+                            <div className="flex-2 bg-gray-500 dark:bg-gray-400 pr-0.5 pb-0.5 rounded-2xl rounded-br-[calc(1rem+1px)] md:rounded-br-[calc(1rem+2px)] w-full h-full overflow-hidden container">
                                 <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/E1-tayxtMS2tjE2WcHnTWqw0A7VdlDshL.jpg"
                                     alt="3D Printer maintenance"
@@ -122,7 +122,7 @@ const IntroMozaic = ({ className }: Props) => {
                                     height={767}
                                 />
                             </div>
-                            <div className="flex-2 bg-background-200 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+2px)] md:rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden container">
+                            <div className="flex-2 bg-gray-500 dark:bg-gray-400 pr-0.5 pb-0.5 rounded-2xl rounded-br-[calc(1rem+1px)] md:rounded-br-[calc(1rem+2px)] w-full h-full overflow-hidden container">
                                 <Image
                                     src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/D1-Ys0lHUvFwk3W9IPmKz0DUp1uk29bSr.jpg"
                                     alt="Python edge detection with OpenCV"
@@ -179,7 +179,7 @@ const IntroMozaic = ({ className }: Props) => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <div className="flex-2 pr-1 pb-1 rounded-2xl rounded-br-[calc(1rem+2px)] md:rounded-br-[calc(1rem+4px)] w-full h-full overflow-hidden bg-accent-300 container">
+                    <div className="flex-2 bg-amber-400 dark:bg-amber-300 pr-0.5 pb-0.5 rounded-2xl rounded-br-[calc(1rem+1px)] md:rounded-br-[calc(1rem+2px)] w-full h-full overflow-hidden container">
                         <Image
                             src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/T2-znWF4bXETbP4NNI4DFgQKBmhNprWYg.jpg"
                             alt="Teaching eletronics in China"

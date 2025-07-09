@@ -6,6 +6,7 @@ import { Button } from "../UI/button";
 import { useTheme } from "next-themes";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { Primitive } from "@radix-ui/react-primitive";
+import { ArrowRight } from "lucide-react";
 
 type Props = {} & ComponentPropsWithoutRef<typeof Primitive.div>;
 
@@ -28,7 +29,7 @@ const StyledIntro = ({ className }: Props) => {
                 </h1>
                 <br />
                 <p className="font-black text-2xl">
-                    <span className="bg-clip-text bg-gradient-to-r from-primary to-accent text-transparent text-3xl">
+                    <span className="bg-clip-text bg-gradient-to-r from-amber-500 to-rose-600 text-transparent text-3xl">
                         Multidisciplinary{" "}
                     </span>
                     <span>Computer Engineer </span>
@@ -39,7 +40,7 @@ const StyledIntro = ({ className }: Props) => {
                         style={
                             theme === "dark" ||
                             (theme === "system" && systemTheme === "dark")
-                                ? { WebkitTextStroke: "1px var(--accent)" }
+                                ? { WebkitTextStroke: "1px white" }
                                 : { WebkitTextStroke: "1px black" }
                         }
                     >
@@ -62,23 +63,34 @@ const StyledIntro = ({ className }: Props) => {
             </div>
 
             <div className="flex justify-center gap-4 mt-8">
+                <Link href={"/experience"}>
+                    <Button
+                        className={cn(
+                            "bg-amber-500 border-1 border-amber-300 p-6 rounded-full",
+                            "border-amber-400",
+                            "hover:bg-amber-400 hover:shadow-lg hover:shadow-amber-200",
+                            "dark:hover:shadow-amber-600"
+                        )}
+                    >
+                        <p className="font-inter font-medium">
+                            Work Experience
+                        </p>
+                        <ArrowRight />
+                    </Button>
+                </Link>
                 <Link href={"/projects"}>
                     <Button
                         className={cn(
-                            "bg-secondary-300 p-8",
-                            "hover:bg-accent"
+                            "bg-rose-600 p-6 border-rose-400 border-1 rounded-full",
+                            "dark:border-rose-500",
+                            "hover:bg-rose-500 hover:shadow-lg hover:shadow-rose-300",
+                            "dark:hover:shadow-rose-700"
                         )}
                     >
-                        <p className="font-inter font-medium text-text">
-                            Checkout my projects?
+                        <p className="font-inter font-medium">
+                            Checkout my projects
                         </p>
-                    </Button>
-                </Link>
-                <Link href={"/experience"}>
-                    <Button className={cn("p-8", "hover:bg-accent")}>
-                        <p className="font-inter font-medium text-text">
-                            Work Experience
-                        </p>
+                        <ArrowRight />
                     </Button>
                 </Link>
             </div>

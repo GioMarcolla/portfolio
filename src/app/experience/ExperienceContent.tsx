@@ -1,11 +1,11 @@
 import ExperienceDetails from "@/Components/ExperienceDetails";
 import ExperienceMozaic from "@/Components/ExperienceMozaic";
-import { ExperienceDataType } from "@/Lib/Types/ExperienceDataType";
 import { cn } from "@/Lib/Utils/shadCNUtils";
+import { ExperienceType } from "@/Lib/zod/schemas";
 import { FC } from "react";
 
 type Props = {
-    data: ExperienceDataType;
+    data: ExperienceType;
 };
 
 const ExperienceContent: FC<Props> = ({ data }: Props) => {

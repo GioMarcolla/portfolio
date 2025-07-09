@@ -1,54 +1,36 @@
-import { BioDataType } from '@/Lib/Types/BioDataType';
-import { calculateAgeFromBirthdateISO } from '@/Lib/Utils/AgeUtils';
+import { calculateAgeFromBirthdateISO } from "@/Lib/Utils/AgeUtils";
 
-export const parseBioData = (rawData: BioDataType): BioDataType => {
-    return {
-        Name: {
-            First: rawData.Name.First,
-            Middle: rawData.Name.Middle,
-            Last: rawData.Name.Last,
+import { DeepOmit } from "@/Lib/Utils/TypeUtils";
+import { BiodataHelpers, BiodataType } from "@/Lib/zod/schemas";
 
-            toString() {
-                return [this.First, this.Middle, this.Last]
-                    .filter(Boolean)
-                    .join(" ");
-            },
-        },
-        Nickname: rawData.Nickname,
-        Birthdate: {
-            Year: rawData.Birthdate.Year,
-            Month: rawData.Birthdate.Month,
-            Day: rawData.Birthdate.Day,
+export const parseBiodata = (
+    rawData: DeepOmit<BiodataType, BiodataHelpers>
+): BiodataType => {
+    const biodata = rawData as BiodataType;
 
-            toString() {
-                return `${rawData.Birthdate.Year.toString().padStart(
-                    4,
-                    "0"
-                )}/${rawData.Birthdate.Month.toString().padStart(
-                    2,
-                    "0"
-                )}${rawData.Birthdate.Day ? "/" + rawData.Birthdate.Day.toString().padStart(2, "0") : ""}`;
-            },
-        },
-        Gender: rawData.Gender,
-        Profession: rawData.Profession,
-        Nationalities: rawData.Nationalities,
-        ResidentOf: {
-            Country: rawData.ResidentOf.Country,
-            State: rawData.ResidentOf.State,
-            City: rawData.ResidentOf.City,
-
-            toString() {
-                return `${this.City}, ${this.State}, ${this.Country}`;
-            },
-        },
-        get Age() {
-            return calculateAgeFromBirthdateISO(
-                `${this.Birthdate.Year}-${this.Birthdate.Month}-${this.Birthdate.Day}`
-            );
-        },
-        toString() {
-            return `${this.Name}, ${this.Profession}, ${this.Age}yo. Currently living in ${this.ResidentOf}.`;
-        },
+    biodata.Name.toString = function () {
+        return [this.First, this.Middle, this.Last].filter(Boolean).join(" ");
     };
+
+    biodata.Birthdate.toString = function () {
+        return [this.Day, this.Month, this.Year].filter(Boolean).join("/");
+    };
+
+    biodata.ResidentOf.toString = function () {
+        return [this.City, this.State, this.Country].filter(Boolean).join(", ");
+    };
+
+    biodata.Age = function () {
+        return calculateAgeFromBirthdateISO(
+            [this.Birthdate.Day, this.Birthdate.Month, this.Birthdate.Year]
+                .filter(Boolean)
+                .join("-")
+        );
+    };
+
+    biodata.toString = function () {
+        return `${this.Name}, ${this.Profession}, ${this.Age}yo. Currently living in ${this.ResidentOf}.`;
+    };
+
+    return biodata;
 };

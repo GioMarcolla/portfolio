@@ -3,6 +3,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 import { Button } from "./button";
 import Link from "next/link";
 import { cn } from "@/Lib/Utils/shadCNUtils";
+import { usePathname } from "next/navigation";
 
 type Props = {
     icon?: LucideIcon;
@@ -18,7 +19,8 @@ const MenuButton = ({
     name,
     className,
 }: Props) => {
-    const iconElement = Icon ? <Icon className={"!w-full !h-auto"} /> : null;
+    const pathname = usePathname();
+    const iconElement = Icon ? <Icon className={`!w-full !h-auto ${pathname === path ? 'text-amber-500' : ''}`} /> : null;
 
     return (
         <>

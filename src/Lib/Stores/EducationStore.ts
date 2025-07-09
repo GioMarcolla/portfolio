@@ -2,19 +2,19 @@ import axios from 'axios';
 import { create } from 'zustand';
 
 import { createLazyStore } from '@/Lib/Factories/LazyStoreFactory';
-import { parseEducationData } from '@/Lib/Parsers/EducationDataParser';
-import { EducationDataType } from '@/Lib/Types/EducationDataType';
+import { parseEducation } from '@/Lib/Parsers/EducationParser';
 import api from '@/Lib/Utils/AxiosUtils';
+import { EducationType } from '@/Lib/zod/schemas';
 
 export const useEducationDataStore = create(
-    createLazyStore<EducationDataType[]>(async () => {
+    createLazyStore<EducationType[]>(async () => {
         try {
             const res = await api.get("/education");
             console.log(
                 "Bio data updated at " + new Date().toLocaleDateString("en-us")
             );
 
-            return parseEducationData(res.data);
+            return parseEducation(res.data);
         } catch (err) {
             if (axios.isAxiosError(err)) {
                 console.error(err.message);

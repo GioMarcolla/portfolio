@@ -2,16 +2,17 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/UI/tabs";
 import { useExperienceStore } from "@/Lib/Stores/ExperienceStore";
-import { ExperienceDataType } from "@/Lib/Types/ExperienceDataType";
 import React, { useEffect, useState } from "react";
 import ExperienceContent from "./ExperienceContent";
+import { cn } from "@/Lib/Utils/shadCNUtils";
+import { ExperienceType } from "@/Lib/zod/schemas";
 
 type Props = {};
 
 const ExperiencePage = ({}: Props) => {
     const getData = useExperienceStore((state) => state.getData);
     const [ExperienceData, setExperienceData] = useState<
-        ExperienceDataType[] | null
+        ExperienceType[] | null
     >(null);
 
     useEffect(() => {
@@ -35,7 +36,7 @@ const ExperiencePage = ({}: Props) => {
             }
             className="min-w-full"
         >
-            <TabsList className="flex flex-row-reverse gap-2 bg-transparent p-4 w-full max-w-full h-auto max-h-16 overflow-scroll no-scrollbar">
+            <TabsList className="flex flex-row-reverse gap-4 bg-transparent p-4 w-full max-w-full h-auto max-h-16 overflow-scroll no-scrollbar">
                 {ExperienceData?.map((exp) => {
                     return (
                         <TabsTrigger
@@ -44,7 +45,10 @@ const ExperiencePage = ({}: Props) => {
                                 " ",
                                 "-"
                             ).toLowerCase()}
-                            className="bg-background-50 data-[state=active]:bg-accent dark:data-[state=active]:bg-primary shadow min-w-fit h-auto"
+                            className={cn(
+                                "!shadow-none min-w-fit h-auto border-0 border-b-2 rounded-none border-black p-0",
+                                "data-[state=active]:border-rose-500"
+                            )}
                         >
                             <p className="text-lg">{exp.JobTitle}</p>
                         </TabsTrigger>
@@ -62,17 +66,6 @@ const ExperiencePage = ({}: Props) => {
                     </TabsContent>
                 );
             })}
-
-            {/* <TabsList className="flex flex-row-reverse w-full">
-                <TabsTrigger value="account">Account</TabsTrigger>
-                <TabsTrigger value="password">Password</TabsTrigger>
-            </TabsList>
-            <TabsContent value="account">
-                Make changes to your account here.
-            </TabsContent>
-            <TabsContent value="password">
-                Change your password here.
-            </TabsContent> */}
         </Tabs>
     );
 };

@@ -8,7 +8,7 @@ const api: AxiosInstance = axios.create({
     headers: {
         "x-api-key": process.env.NEXT_PUBLIC_API_KEY || "",
     },
-    timeout: 3000,
-});
+    timeout: 10000
+})
 
 export default api;

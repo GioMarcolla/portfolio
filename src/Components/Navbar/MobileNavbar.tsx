@@ -1,10 +1,15 @@
 import { ArrowLeft, Menu } from "lucide-react";
-import { useEffect, useState, PropsWithChildren } from "react";
+import { FC, useEffect, useState } from "react";
 
 import { Button } from "../UI/button";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 
-const MobileNavbar = ({ children }: PropsWithChildren) => {
+type Props = {
+    className?: string;
+    children?: React.ReactNode;
+} & React.ComponentProps<"div">;
+
+const MobileNavbar: FC<Props> = ({ children, className, ...props }) => {
     const [open, setOpen] = useState(false);
     const [currentTimeout, setCurrentTimeout] = useState<NodeJS.Timeout | null>(
         null
@@ -39,7 +44,8 @@ const MobileNavbar = ({ children }: PropsWithChildren) => {
         <div
             className={cn(
                 "flex flex-col justify-between items-center bg-background fixed z-10",
-                open ? "w-fit" : "w-0"
+                open ? "w-fit" : "w-0",
+                className
             )}
             onMouseEnter={() => {
                 if (currentTimeout) {
@@ -48,6 +54,7 @@ const MobileNavbar = ({ children }: PropsWithChildren) => {
                 }
             }}
             onMouseLeave={triggerTimeout}
+            {...props}
         >
             <div className={cn("relative bg-transparent", "md:hidden")}>
                 <Button

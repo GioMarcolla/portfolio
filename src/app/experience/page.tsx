@@ -46,11 +46,12 @@ const ExperiencePage = ({}: Props) => {
                                 "-"
                             ).toLowerCase()}
                             className={cn(
-                                "!shadow-none min-w-fit h-auto border-0 border-b-2 rounded-none border-black p-0",
-                                "data-[state=active]:border-rose-500"
+                                "!shadow-none min-w-fit h-auto border-0 rounded-none p-0 !text-foreground",
+                                "hover:!text-accent hover:cursor-pointer",
+                                "data-[state=active]:!border-primary border-b-1"
                             )}
                         >
-                            <p className="text-lg">{exp.JobTitle}</p>
+                            <p className="text-lg text-inherit">{exp.JobTitle}</p>
                         </TabsTrigger>
                     );
                 })}

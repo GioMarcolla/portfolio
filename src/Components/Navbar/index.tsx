@@ -11,6 +11,7 @@ import { Button } from "../UI/button";
 import MenuButton from "../UI/MenuButton";
 import FixedNavbar from "./FixedNavbar";
 import MobileNavbar from "./MobileNavbar";
+import { cn } from "@/Lib/Utils/shadCNUtils";
 
 const Navbar: FC = () => {
     const [isMdUp, setIsMdUp] = useState<boolean>(false);
@@ -29,14 +30,18 @@ const Navbar: FC = () => {
     const SelectedNavbar = isMdUp ? FixedNavbar : MobileNavbar;
 
     return (
-        <SelectedNavbar>
+        <SelectedNavbar className="bg-background border-r-1 border-primary">
             <div className="flex flex-col flex-1 justify-between items-center pt-8 md:pt-0">
                 <div>
                     <Image
                         src={"/assets/images/og-image.png"}
                         height={48}
                         width={48}
-                        className="dark:invert"
+                        className={cn(
+                            "vapor:invert",
+                            "race:invert",
+                            "gloomy:invert"
+                        )}
                         alt="Giovanni Marcolla Logo"
                     />
                 </div>
@@ -50,24 +55,27 @@ const Navbar: FC = () => {
                         path="/"
                         name="Home"
                         className="w-24 md:w-12 h-12 md:h-12"
-                    />
-                    <p className="md:hidden mb-4">Home</p>
+                    >
+                        <p className="md:hidden mb-4">Home</p>
+                    </MenuButton>
                     <MenuButton
                         icon={BriefcaseBusiness}
                         tooltipText={"Work Experience"}
                         path="/experience"
                         name="Experience"
                         className="w-24 md:w-12 h-12 md:h-12"
-                    />
-                    <p className="md:hidden mb-4">Experience</p>
+                    >
+                        <p className="md:hidden mb-4">Experience</p>
+                    </MenuButton>
                     <MenuButton
                         icon={FolderCog}
                         tooltipText={"Other projects"}
                         path="/projects"
                         name="Projects"
                         className="w-24 md:w-12 h-12 md:h-12"
-                    />
-                    <p className="md:hidden mb-4">Projects</p>
+                    >
+                        <p className="md:hidden mb-4">Projects</p>
+                    </MenuButton>
                 </nav>
                 <div>
                     <div>
@@ -79,7 +87,12 @@ const Navbar: FC = () => {
                             >
                                 <Image
                                     src={"/assets/images/inbug-black.png"}
-                                    className="dark:invert w-auto h-6 md:h-4"
+                                    className={cn(
+                                        "w-auto h-6 md:h-4",
+                                        "vapor:!invert",
+                                        "race:!invert",
+                                        "gloomy:!invert"
+                                    )}
                                     width={16}
                                     height={16}
                                     alt="LinkedIn Logo"
@@ -94,7 +107,12 @@ const Navbar: FC = () => {
                             >
                                 <Image
                                     src={"/assets/images/github-mark.png"}
-                                    className="dark:invert w-auto h-6 md:h-4"
+                                    className={cn(
+                                        "w-auto h-6 md:h-4",
+                                        "vapor:!invert",
+                                        "race:!invert",
+                                        "gloomy:!invert"
+                                    )}
                                     width={16}
                                     height={16}
                                     alt="GitHub Logo"

@@ -4,16 +4,16 @@ import { create } from 'zustand';
 import { createLazyStore } from '@/Lib/Factories/LazyStoreFactory';
 import { parseExperience } from '@/Lib/Parsers/ExperienceParser';
 import api from '@/Lib/Utils/AxiosUtils';
+
 import { DeepOmit } from '@/Lib/Utils/TypeUtils';
 import { ExperienceHelpers, ExperienceType } from '@/Lib/zod/schemas';
 
 export const useExperienceStore = create(
     createLazyStore<ExperienceType[]>(async () => {
         try {
-            const res = await api.get<DeepOmit<ExperienceType, ExperienceHelpers>[]>("/experience");
-            console.log(
-                "Bio data updated at " + new Date().toLocaleDateString("en-us")
-            );
+            const res = await api.get<
+                DeepOmit<ExperienceType, ExperienceHelpers>[]
+            >("/experience");
 
             return parseExperience(res.data);
         } catch (err) {

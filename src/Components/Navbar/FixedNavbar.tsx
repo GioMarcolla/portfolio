@@ -1,17 +1,23 @@
 import { cn } from "@/Lib/Utils/shadCNUtils";
-import { PropsWithChildren } from "react";
+import { FC } from "react";
 
-const FixedNavbar = ({ children }: PropsWithChildren) => {
+type Props = {
+    className?: string;
+    children?: React.ReactNode;
+} & React.ComponentProps<"div">;
+
+const FixedNavbar: FC<Props> = ({ className, children, ...props }) => {
     return (
         <div
             className={cn(
-                "flex flex-col items-center bg-transparent p-2 border-secondary-100 border-r-1 w-fit min-w-fit h-dvh min-h-dvh max-h-dvh",
-                "dark:border-secondary-300"
+                "flex flex-col items-center p-2 border-r-1 w-fit min-w-fit h-dvh min-h-dvh max-h-dvh",
+                className
             )}
+            {...props}
         >
             {children}
         </div>
-    );
+    )
 };
 
 export default FixedNavbar;

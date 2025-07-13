@@ -10,6 +10,7 @@ type Props = {
     tooltipText?: string;
     path: string;
     name: string;
+    children?: React.ReactNode;
 } & React.ComponentProps<"button">;
 
 const MenuButton = ({
@@ -18,9 +19,16 @@ const MenuButton = ({
     path,
     name,
     className,
+    children,
 }: Props) => {
     const pathname = usePathname();
-    const iconElement = Icon ? <Icon className={`!w-full !h-auto ${pathname === path ? 'text-amber-500' : ''}`} /> : null;
+    const iconElement = Icon ? (
+        <Icon
+            className={cn(
+                `!w-full !h-auto ${pathname === path ? "text-primary" : ""}`
+            )}
+        />
+    ) : null;
 
     return (
         <>
@@ -30,26 +38,36 @@ const MenuButton = ({
                         <Button
                             variant="link"
                             className={cn(
-                                "px-2 py-1 font-bold text-text",
+                                "px-2 py-1 font-bold text-foreground",
+                                "hover:text-accent",
                                 className
                             )}
                         >
                             <Link href={path} color="text">
                                 {iconElement || name}
+                                {children}
                             </Link>
                         </Button>
                     </TooltipTrigger>
-                    <TooltipContent side="right" className="shadow">
-                        <p className="invert text-text">{tooltipText}</p>
+                    <TooltipContent
+                        side="right"
+                        className="bg-background fill-background shadow-md shadow-accent"
+                    >
+                        <p className="text-foreground">{tooltipText}</p>
                     </TooltipContent>
                 </Tooltip>
             ) : (
                 <Button
                     variant="link"
-                    className={cn("px-2 py-1 font-bold text-text", className)}
+                    className={cn(
+                        "px-2 py-1 font-bold text-foreground fill-foreground",
+                        "hover:text-accent",
+                        className
+                    )}
                 >
                     <Link href={path} color="text">
                         {iconElement || name}
+                        {children}
                     </Link>
                 </Button>
             )}

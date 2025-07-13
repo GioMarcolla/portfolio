@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Navbar from "@/Components/Navbar";
 import ThemeProvider from "@/Components/UI/NextThemeProvider";
+import Background from "@/Components/UI/Background";
 
 export const metadata: Metadata = {
     title: "Giovanni Marcolla - Full-Stack Developer & Educator",
@@ -36,21 +37,24 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
-        <html lang="en" suppressHydrationWarning className="text-[8px] md:text-[16px]">
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className="text-[8px] md:text-[16px]"
+        >
             <head></head>
-            {/* CSS fallback for older browser without VH/VW support. */}
             <body>
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange
+                    defaultTheme="vapor"
+                    enableSystem={false}
+                    disableTransitionOnChange={false}
                 >
-                    <div className="flex bg-background m-auto w-dvw min-w-dvw min-w-full max-w-dvw h-dvh min-h-dvh min-h-full antialiased">
+                    <Background />
+                    {/* CSS fallback for older browser without VH/VW support. */}
+                    <div className="flex bg-transparent m-auto w-dvw min-w-dvw min-w-full max-w-dvw h-dvh min-h-dvh min-h-full antialiased">
                         <Navbar />
-                        <div className="overflow-auto grow-1">
-                            {children}
-                        </div>
+                        <div className="overflow-auto grow-1">{children}</div>
                     </div>
                 </ThemeProvider>
             </body>

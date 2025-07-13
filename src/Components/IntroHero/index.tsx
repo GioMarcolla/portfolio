@@ -21,8 +21,12 @@ const IntroHero = ({}: Props) => {
                 "2xl:justify-around 2xl:!gap-[unset]"
             )}
         >
-            <StyledIntro className={cn("", "md:flex-9 md:max-h-[90dvh]", "xl:flex-1")} />
-            <IntroMozaic className={cn("", "md:flex-11 md:max-h-[90dvh]", "xl:flex-1")} />
+            <StyledIntro
+                className={cn("", "md:flex-9 md:max-h-[90dvh]", "xl:flex-1")}
+            />
+            <IntroMozaic
+                className={cn("", "md:flex-11 md:max-h-[90dvh]", "xl:flex-1")}
+            />
         </div>
     );
 };

@@ -56,16 +56,17 @@ const MobileNavbar: FC<Props> = ({ children, className, ...props }) => {
             onMouseLeave={triggerTimeout}
             {...props}
         >
-            <div className={cn("relative bg-transparent", "md:hidden")}>
-                <Button
-                    onClick={toggleMenu}
-                    className="left-0 z-100 fixed bg-transparent w-[32px] h-[32px] text-text"
-                    variant="ghost"
-                >
-                    {!open && <Menu className="!w-full !h-auto" />}
-                    {open && <ArrowLeft className="!w-full !h-auto" />}
-                </Button>
-            </div>
+            <Button
+                onClick={toggleMenu}
+                className={cn(
+                    "left-0 z-100 absolute bg-transparent w-[32px] h-[32px] text-text",
+                    "md:hidden"
+                )}
+                variant="ghost"
+            >
+                {!open && <Menu className="!w-full !h-auto" />}
+                {open && <ArrowLeft className="!w-full !h-auto" />}
+            </Button>
             <div
                 className={cn(
                     "flex flex-col items-center bg-transparent p-2 border-secondary-100 border-r-1 w-fit min-w-fit h-dvh min-h-dvh max-h-dvh",

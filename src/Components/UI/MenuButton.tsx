@@ -24,31 +24,38 @@ const MenuButton = ({
     const pathname = usePathname();
     const iconElement = Icon ? (
         <Icon
-            className={cn(
-                `!w-full !h-auto ${pathname === path ? "text-primary" : ""}`
+            className={cn("!w-12 !h-12",
+                pathname === path ? "text-primary" : "",
+                "md:!w-full md:!h-full"
             )}
         />
     ) : null;
+
+    const ButtonLink = (
+        <Button
+            variant="link"
+            className={cn(
+                "px-2 py-1 font-bold text-foreground h-fit",
+                "hover:text-accent",
+                className
+            )}
+        >
+            <Link
+                href={path}
+                color="text"
+                className="flex flex-col items-center"
+            >
+                {iconElement || name}
+                {children}
+            </Link>
+        </Button>
+    );
 
     return (
         <>
             {tooltipText ? (
                 <Tooltip>
-                    <TooltipTrigger asChild>
-                        <Button
-                            variant="link"
-                            className={cn(
-                                "px-2 py-1 font-bold text-foreground",
-                                "hover:text-accent",
-                                className
-                            )}
-                        >
-                            <Link href={path} color="text">
-                                {iconElement || name}
-                                {children}
-                            </Link>
-                        </Button>
-                    </TooltipTrigger>
+                    <TooltipTrigger asChild>{ButtonLink}</TooltipTrigger>
                     <TooltipContent
                         side="right"
                         className="bg-background fill-background shadow-md shadow-accent"
@@ -57,19 +64,7 @@ const MenuButton = ({
                     </TooltipContent>
                 </Tooltip>
             ) : (
-                <Button
-                    variant="link"
-                    className={cn(
-                        "px-2 py-1 font-bold text-foreground fill-foreground",
-                        "hover:text-accent",
-                        className
-                    )}
-                >
-                    <Link href={path} color="text">
-                        {iconElement || name}
-                        {children}
-                    </Link>
-                </Button>
+                ButtonLink
             )}
         </>
     );

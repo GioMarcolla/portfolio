@@ -9,7 +9,7 @@ const Background: FC<Props> = ({ className }) => {
     return (
         <div
             className={cn(
-                "absolute top-0 left-0 w-full h-full max-h-100dvh max-w-full overflow-hidden -z-10",
+                "absolute top-0 left-0 w-full h-dvh h-lvh max-h-dvh max-h-lvh max-w-full overflow-hidden -z-10",
                 className
             )}
         >

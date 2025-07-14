@@ -38,6 +38,8 @@ const Navbar: FC = () => {
                         height={48}
                         width={48}
                         className={cn(
+                            "w-24 h-24 mt-8",
+                            "md:w-12 md:h-12 md:mt-0",
                             "vapor:invert",
                             "race:invert",
                             "gloomy:invert"
@@ -54,7 +56,6 @@ const Navbar: FC = () => {
                         tooltipText={"Home"}
                         path="/"
                         name="Home"
-                        className="w-24 md:w-12 h-12 md:h-12"
                     >
                         <p className="md:hidden mb-4">Home</p>
                     </MenuButton>
@@ -63,7 +64,6 @@ const Navbar: FC = () => {
                         tooltipText={"Work Experience"}
                         path="/experience"
                         name="Experience"
-                        className="w-24 md:w-12 h-12 md:h-12"
                     >
                         <p className="md:hidden mb-4">Experience</p>
                     </MenuButton>
@@ -72,7 +72,6 @@ const Navbar: FC = () => {
                         tooltipText={"Other projects"}
                         path="/projects"
                         name="Projects"
-                        className="w-24 md:w-12 h-12 md:h-12"
                     >
                         <p className="md:hidden mb-4">Projects</p>
                     </MenuButton>

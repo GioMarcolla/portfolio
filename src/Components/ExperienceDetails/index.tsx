@@ -14,10 +14,12 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
             <div>
                 <h1 className="font-inter font-extrabold text-3xl tracking-wider space">
                     {data.JobTitle}{" "}
-                    <span className="bg-clip-text bg-gradient-to-r from-primary to-secondary text-transparent">
-                        @
-                    </span>{" "}
-                    {data.CompanyName}
+                    <div className="xl:inline">
+                        <span className="bg-clip-text bg-gradient-to-r from-primary to-secondary text-transparent">
+                            @{" "}
+                        </span>
+                        {data.CompanyName}
+                    </div>
                 </h1>
                 <p>Presential - {`${data.JobType}`}</p>
                 <p>{`${data.Location}`}</p>
@@ -31,7 +33,10 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                     .map((topic: string, index: number) => {
                         return (
                             <div key={index} className="flex flex-1">
-                                <ChevronRight size={24} className="text-accent" />
+                                <ChevronRight
+                                    size={24}
+                                    className="text-accent"
+                                />
                                 <p className="flex-1">{topic.trim()}</p>
                             </div>
                         );

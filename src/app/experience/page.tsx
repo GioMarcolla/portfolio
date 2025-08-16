@@ -34,7 +34,7 @@ const ExperiencePage = ({}: Props) => {
                       ].JobTitle.replaceAll(" ", "-").toLowerCase()
                     : ""
             }
-            className="min-w-full"
+            className="pl-16 md:pl-0 w-full min-w-full max-w-dvw"
         >
             <TabsList className="flex flex-row-reverse gap-4 bg-transparent p-4 w-full max-w-full h-auto max-h-16 overflow-scroll no-scrollbar">
                 {ExperienceData?.map((exp) => {
@@ -51,7 +51,9 @@ const ExperiencePage = ({}: Props) => {
                                 "data-[state=active]:!border-primary border-b-1"
                             )}
                         >
-                            <p className="text-lg text-inherit">{exp.JobTitle}</p>
+                            <p className="text-lg text-inherit">
+                                {exp.JobTitle}
+                            </p>
                         </TabsTrigger>
                     );
                 })}

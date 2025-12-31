@@ -32,7 +32,7 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                         return (
                             <div key={index} className="flex flex-1">
                                 <ChevronRight size={24} className="text-accent" />
-                                <p className="flex-1">{topic.trim()}</p>
+                                <p className="flex-1 text-justify">{topic.trim()}</p>
                             </div>
                         );
                     })}

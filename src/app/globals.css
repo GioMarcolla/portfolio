@@ -10,6 +10,7 @@
 @custom-variant soothing (&:where(.soothing, .soothing *));
 @custom-variant gloomy (&:where(.gloomy, .gloomy *));
 @custom-variant race (&:where(.race, .race *));
+@custom-variant luxe (&:where(.luxe, .luxe *));
 
 @layer utilities {
     .no-scrollbar::-webkit-scrollbar {

@@ -35,7 +35,7 @@ const MenuButton = ({
         <Button
             variant="link"
             className={cn(
-                "px-2 py-1 font-bold text-foreground h-fit",
+                "px-2 py-1 h-fit font-bold text-foreground",
                 "hover:text-accent",
                 className
             )}
@@ -58,9 +58,9 @@ const MenuButton = ({
                     <TooltipTrigger asChild>{ButtonLink}</TooltipTrigger>
                     <TooltipContent
                         side="right"
-                        className="bg-background fill-background shadow-md shadow-accent"
+                        className="bg-primary shadow-accent shadow-sm fill-background"
                     >
-                        <p className="text-foreground">{tooltipText}</p>
+                        <p className="text-foreground luxe:text-background soothing:text-background">{tooltipText}</p>
                     </TooltipContent>
                 </Tooltip>
             ) : (

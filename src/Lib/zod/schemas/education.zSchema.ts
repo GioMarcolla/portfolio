@@ -2,7 +2,7 @@ import { z } from "zod";
 import { BasicDateSchema, BasicLocationSchema } from "@/Lib/zod/schemas";
 
 const helpers = {
-    toString: z.function().returns(z.string()),
+    toString: z.function({output: z.string()}),
 };
 
 export const EducationSchema = z.object({

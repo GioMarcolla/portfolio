@@ -6,8 +6,8 @@ import {
 } from "@/Lib/zod/schemas";
 
 const helpers = {
-    Duration: z.function(z.tuple([]), z.string()),
-    toString: z.function(z.tuple([]), z.string()),
+    Duration: z.function({input: z.tuple([]), output: z.string()}),
+    toString: z.function({input: z.tuple([]), output: z.string()}),
 };
 
 export const ExperienceSchema = z.object({

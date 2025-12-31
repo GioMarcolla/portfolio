@@ -3,15 +3,15 @@ import { z } from "zod";
 import { BasicDateSchema, BasicLocationSchema } from "@/Lib/zod/schemas";
 
 const helpers = {
-    toString: z.function(z.tuple([]), z.string()),
-    Age: z.function(z.tuple([]), z.number()),
+    toString: z.function({input: z.tuple([]), output: z.string()}),
+    Age: z.function({input: z.tuple([]), output: z.number()}),
 };
 
 export const BiodataNameSchema = z.object({
     First: z.string(),
     Middle: z.string().optional(),
     Last: z.string(),
-    toString: z.function(z.tuple([]), z.string()),
+    toString: z.function({input: z.tuple([]), output: z.string()}),
 });
 
 export const BiodataSchema = z.object({

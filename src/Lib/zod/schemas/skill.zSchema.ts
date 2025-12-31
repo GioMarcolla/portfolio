@@ -20,7 +20,7 @@ export const SkillSchema = z.object({
         z.literal(4),
         z.literal(5),
     ]),
-    toString: z.function(z.tuple([]), z.string()),
+    toString: z.function({input: z.tuple([]), output: z.string()}),
 });
 
 export type SkillType = z.infer<typeof SkillSchema>;

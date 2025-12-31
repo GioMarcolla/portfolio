@@ -6,20 +6,21 @@ import React, { useEffect, useState } from "react";
 import ExperienceContent from "./ExperienceContent";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { ExperienceType } from "@/Lib/zod/schemas";
+import { LoaderCircle } from "lucide-react";
 
 type Props = {};
 
 const ExperiencePage = ({}: Props) => {
     const getExperience = useExperienceStore((state) => state.getData);
-    const [ExperienceData, setExperienceData] = useState<
-        ExperienceType[] | null
-    >(null);
+    const [ExperienceData, setExperienceData] = useState<ExperienceType[]>([]);
 
     useEffect(() => {
-        getExperience().then(setExperienceData).catch(console.error);
+        getExperience()
+            .then((res) => setExperienceData(res.reverse()))
+            .catch(console.error);
     }, [getExperience]);
 
-    return (
+    return ExperienceData.length > 0 ? (
         <Tabs
             // Use a key to force remount when ExperienceData changes
             key={
@@ -29,14 +30,14 @@ const ExperiencePage = ({}: Props) => {
             }
             defaultValue={
                 ExperienceData && ExperienceData.length > 0
-                    ? ExperienceData[
-                          ExperienceData.length - 1
-                      ].JobTitle.replaceAll(" ", "-").toLowerCase()
+                    ? ExperienceData[0].JobTitle.replaceAll(" ", "-").toLowerCase()
                     : ""
             }
-            className="min-w-full"
+            className="max-w-full"
         >
-            <TabsList className="flex flex-row-reverse gap-4 bg-transparent p-4 w-full max-w-full h-auto max-h-16 overflow-scroll no-scrollbar">
+            <TabsList
+                className="flex flex-row justify-start gap-4 bg-transparent px-4 w-full min-w-full h-auto max-h-16 overflow-scroll no-scrollbar"
+            >
                 {ExperienceData?.map((exp) => {
                     return (
                         <TabsTrigger
@@ -46,12 +47,14 @@ const ExperiencePage = ({}: Props) => {
                                 "-"
                             ).toLowerCase()}
                             className={cn(
-                                "!shadow-none min-w-fit h-auto border-0 rounded-none p-0 !text-foreground",
+                                "!shadow-none p-0 border-0 rounded-none h-auto !text-foreground",
                                 "hover:!text-accent hover:cursor-pointer",
                                 "data-[state=active]:!border-primary border-b-1"
                             )}
                         >
-                            <p className="text-lg text-inherit">{exp.JobTitle}</p>
+                            <p className="text-inherit text-lg">
+                                {exp.JobTitle}
+                            </p>
                         </TabsTrigger>
                     );
                 })}
@@ -68,6 +71,13 @@ const ExperiencePage = ({}: Props) => {
                 );
             })}
         </Tabs>
+    ) : (
+        <div className="flex flex-col justify-center items-center p-8 w-full h-full">
+            <LoaderCircle className="text-primary animate-spin" size={48} />
+            <p className="mt-4 text-foreground text-lg">
+                Loading experience data...
+            </p>
+        </div>
     );
 };
 

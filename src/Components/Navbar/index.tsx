@@ -1,6 +1,5 @@
 "use client";
 
-import { BriefcaseBusiness, FolderCog, House } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
@@ -12,6 +11,13 @@ import MenuButton from "../UI/MenuButton";
 import FixedNavbar from "./FixedNavbar";
 import MobileNavbar from "./MobileNavbar";
 import { cn } from "@/Lib/Utils/shadCNUtils";
+import {
+    HomeIcon,
+    WorkIcon,
+    ProjectIcon,
+    EventIcon,
+    CertificateIcon,
+} from "../UI/Icons";
 
 const Navbar: FC = () => {
     const [isMdUp, setIsMdUp] = useState<boolean>(false);
@@ -30,7 +36,7 @@ const Navbar: FC = () => {
     const SelectedNavbar = isMdUp ? FixedNavbar : MobileNavbar;
 
     return (
-        <SelectedNavbar className="bg-background border-r-1 border-primary">
+        <SelectedNavbar className="bg-background border-primary border-r-1">
             <div className="flex flex-col flex-1 justify-between items-center pt-8 md:pt-0">
                 <div>
                     <Image
@@ -38,7 +44,7 @@ const Navbar: FC = () => {
                         height={48}
                         width={48}
                         className={cn(
-                            "w-24 h-24 mt-8",
+                            "mt-8 w-24 h-24",
                             "md:w-12 md:h-12 md:mt-0",
                             "vapor:invert",
                             "race:invert",
@@ -49,10 +55,10 @@ const Navbar: FC = () => {
                 </div>
                 <nav
                     data-slot="active"
-                    className="flex flex-col items-center gap-2"
+                    className="flex flex-col items-center gap-8"
                 >
                     <MenuButton
-                        icon={House}
+                        icon={<HomeIcon className="size-8" />}
                         tooltipText={"Home"}
                         path="/"
                         name="Home"
@@ -60,7 +66,7 @@ const Navbar: FC = () => {
                         <p className="md:hidden mb-4">Home</p>
                     </MenuButton>
                     <MenuButton
-                        icon={BriefcaseBusiness}
+                        icon={<WorkIcon className="size-8" />}
                         tooltipText={"Work Experience"}
                         path="/experience"
                         name="Experience"
@@ -68,12 +74,28 @@ const Navbar: FC = () => {
                         <p className="md:hidden mb-4">Experience</p>
                     </MenuButton>
                     <MenuButton
-                        icon={FolderCog}
-                        tooltipText={"Other projects"}
+                        icon={<ProjectIcon className="size-8" />}
+                        tooltipText={"Projects"}
                         path="/projects"
                         name="Projects"
                     >
                         <p className="md:hidden mb-4">Projects</p>
+                    </MenuButton>
+                    <MenuButton
+                        icon={<EventIcon className="size-8" />}
+                        tooltipText={"Events"}
+                        path="/events"
+                        name="Events"
+                    >
+                        <p className="md:hidden mb-4">Events</p>
+                    </MenuButton>
+                    <MenuButton
+                        icon={<CertificateIcon className="size-8" />}
+                        tooltipText={"Certifications"}
+                        path="/certifications"
+                        name="Certifications"
+                    >
+                        <p className="md:hidden mb-4">Certifications</p>
                     </MenuButton>
                 </nav>
                 <div>

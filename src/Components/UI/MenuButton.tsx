@@ -1,4 +1,3 @@
-import { LucideIcon } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 import { Button } from "./button";
 import Link from "next/link";
@@ -6,7 +5,7 @@ import { cn } from "@/Lib/Utils/shadCNUtils";
 import { usePathname } from "next/navigation";
 
 type Props = {
-    icon?: LucideIcon;
+    icon: React.ReactNode;
     tooltipText?: string;
     path: string;
     name: string;
@@ -14,7 +13,7 @@ type Props = {
 } & React.ComponentProps<"button">;
 
 const MenuButton = ({
-    icon: Icon,
+    icon,
     tooltipText,
     path,
     name,
@@ -22,21 +21,19 @@ const MenuButton = ({
     children,
 }: Props) => {
     const pathname = usePathname();
-    const iconElement = Icon ? (
-        <Icon
-            className={cn("!w-12 !h-12",
-                pathname === path ? "text-primary" : "",
-                "md:!w-full md:!h-full"
-            )}
-        />
-    ) : null;
+
+    const iconElement = (
+        <div className={pathname === path ? "text-primary" : ""}>
+            {icon}
+        </div>
+    );
 
     const ButtonLink = (
         <Button
             variant="link"
             className={cn(
                 "px-2 py-1 h-fit font-bold text-foreground",
-                "hover:text-accent",
+                "hover:text-primary/60",
                 className
             )}
         >
@@ -60,7 +57,9 @@ const MenuButton = ({
                         side="right"
                         className="bg-primary shadow-accent shadow-sm fill-background"
                     >
-                        <p className="text-foreground luxe:text-background soothing:text-background">{tooltipText}</p>
+                        <p className="text-foreground luxe:text-background soothing:text-background">
+                            {tooltipText}
+                        </p>
                     </TooltipContent>
                 </Tooltip>
             ) : (

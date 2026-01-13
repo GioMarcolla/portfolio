@@ -33,10 +33,10 @@ const ExperiencePage = ({}: Props) => {
                     ? ExperienceData[0].JobTitle.replaceAll(" ", "-").toLowerCase()
                     : ""
             }
-            className="max-w-full"
+            className="max-w-full max-h-full"
         >
             <TabsList
-                className="flex flex-row justify-start gap-4 bg-transparent px-4 w-full min-w-full h-auto max-h-16 overflow-scroll no-scrollbar"
+                className="flex flex-row justify-start gap-4 bg-transparent px-8 pt-8 pb-4 w-full min-w-full h-auto max-h-10 overflow-scroll no-scrollbar"
             >
                 {ExperienceData?.map((exp) => {
                     return (
@@ -64,7 +64,8 @@ const ExperiencePage = ({}: Props) => {
                     <TabsContent
                         key={`exp-${exp.id}`}
                         value={exp.JobTitle.replaceAll(" ", "-").toLowerCase()}
-                        className="max-h-[calc(100dvh-4.5rem)] overflow-scroll"
+                        // className="h-full max-h-full overflow-scroll"
+                        className="h-[calc(100dvh-3rem)] max-h-[calc(100dvh-3rem)] overflow-scroll"
                     >
                         <ExperienceContent data={exp} />
                     </TabsContent>

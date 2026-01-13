@@ -26,9 +26,7 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                 </p>
             </div>
             <div className="flex flex-col gap-2 pl-2">
-                {data.Description.split("\\n")
-                    .filter(Boolean)
-                    .map((topic: string, index: number) => {
+                {data.Description.map((topic: string, index: number) => {
                         return (
                             <div key={index} className="flex flex-1">
                                 <ChevronRight size={24} className="text-accent" />
@@ -40,7 +38,7 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
             <div>
                 <h1 className="font-bold text-xl">Responsibilities:</h1>
                 <p className="pl-2">
-                    {data.Responsibilities.split("\\n").join(", ").concat(".")}
+                    {data.Responsibilities.join(", ").concat(".")}
                 </p>
             </div>
             <div></div>

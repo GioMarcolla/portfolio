@@ -27,25 +27,9 @@
     }
 
     .hallow-stroke {
-        /* overflow: visible;
-        text-wrap: nowrap; */
         -webkit-text-stroke: 1px var(--primary);
     }
-    /* .hallow-stroke::after {
-        content: attr(data-text);
-        position: absolute;
-        left: 0;
-        -webkit-text-stroke: 1px var(--primary);
-    }
-    .hallow-stroke::before {
-        content: attr(data-text);
-        position: absolute;
-        left: 1px;
-        top: 1px;
-        -webkit-text-stroke: 1px var(--accent);
-    } */
 }
-
 
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
@@ -93,43 +77,43 @@
         --radius: 0.625rem;
 
         --vapor-red: #a6263e;
-        --vapor-dark-red: #8C2742;
-        --vapor-blue: #326A8C;
-        --vapor-dark-blue: #2E728C;
-        --vapor-light-blue: #BDE3F2;
+        --vapor-dark-red: #8c2742;
+        --vapor-blue: #326a8c;
+        --vapor-dark-blue: #2e728c;
+        --vapor-light-blue: #bde3f2;
 
-        --gloomy-blue: #2E728C;
-        --gloomy-dark-blue: #0B1C26;
-        --gloomy-light-blue: #63CAF2;
-        --gloomy-teal: #79F2E6;
-        --gloomy-muted-olive: #AFD9AD;
+        --gloomy-blue: #2e728c;
+        --gloomy-dark-blue: #0b1c26;
+        --gloomy-light-blue: #63caf2;
+        --gloomy-teal: #79f2e6;
+        --gloomy-muted-olive: #afd9ad;
 
-        --race-leather-red: #A6212C;
+        --race-leather-red: #a6212c;
         --race-leather-mocha: #734549;
-        --race-bronze: #B38450;
-        --race-red: #BF190A;
-        --race-black: #0D0D0D;
+        --race-bronze: #b38450;
+        --race-red: #bf190a;
+        --race-black: #0d0d0d;
 
-        --soothing-olive: #4D5934;
-        --soothing-muted-green: #9AA66F;
-        --soothing-gray: #8F9BA6;
-        --soothing-green: #B4BF5E;
-        --soothing-lime: #BABF30;
+        --soothing-olive: #4d5934;
+        --soothing-muted-green: #9aa66f;
+        --soothing-gray: #8f9ba6;
+        --soothing-green: #b4bf5e;
+        --soothing-lime: #babf30;
 
         --mono-dark-slate: #343133;
-        --mono-slate: #A69E9D;
-        --mono-gray: #E7E8E7;
-        --mono-light-beige: #F4F3EB;
-        --mono-white: #FEFEFE;
+        --mono-slate: #a69e9d;
+        --mono-gray: #e7e8e7;
+        --mono-light-beige: #f4f3eb;
+        --mono-white: #fefefe;
 
         --luxe-green: #033540;
-        --luxe-red: #5F0D14;
-        --luxe-gray: #D1C8C2;
-        --luxe-light-gray: #DBDADB;
-        --luxe-white: #F4F9FA;
+        --luxe-red: #5f0d14;
+        --luxe-gray: #d1c8c2;
+        --luxe-light-gray: #dbdadb;
+        --luxe-white: #f4f9fa;
         --luxe-black: #110022;
-        --luxe-beige: #EFDFC5;
-        --luxe-yellow: #F2E7AC;
+        --luxe-beige: #efdfc5;
+        --luxe-yellow: #f2e7ac;
     }
 
     .vapor {
@@ -141,11 +125,29 @@
         --secondary-foreground: var(--vapor-light-blue);
         --muted: var(--vapor-dark-blue);
         --muted-foreground: var(--vapor-light-blue);
-        --accent: var(--vapor-dark-blue); 
+        --accent: var(--vapor-dark-blue);
+
+        .pop-up-100 {
+            @apply backdrop-brightness-150;
+            box-shadow: 0 0 20px #ffffff20;
+            border: solid 1px
+                color-mix(in srgb, var(--vapor-blue) 20%, transparent);
+        }
+
+        .pop-up-200 {
+            @apply backdrop-brightness-200;
+            box-shadow: 0 0 20px #ffffff25;
+            border: solid 1px
+                color-mix(in srgb, var(--vapor-blue) 30%, transparent);
+        }
     }
 
     .gloomy {
-        --background: color-mix(in srgb, var(--gloomy-light-blue) 10%, black 90%);
+        --background: color-mix(
+            in srgb,
+            var(--gloomy-light-blue) 10%,
+            black 90%
+        );
         --foreground: color-mix(in srgb, var(--gloomy-teal) 15%, white 85%);
         --primary: var(--gloomy-blue);
         --primary-foreground: white;
@@ -154,10 +156,24 @@
         --muted: var(--gloomy-dark-blue);
         --muted-foreground: var(--gloomy-light-blue);
         --accent: var(--gloomy-light-blue);
+
+        .pop-up-100 {
+            @apply backdrop-brightness-150;
+            box-shadow: 0 0 20px #ffffff20;
+            border: solid 1px
+                color-mix(in srgb, var(--gloomy-blue) 20%, transparent);
+        }
+
+        .pop-up-200 {
+            @apply backdrop-brightness-200;
+            box-shadow: 0 0 20px #ffffff25;
+            border: solid 1px
+                color-mix(in srgb, var(--gloomy-blue) 30%, transparent);
+        }
     }
 
     .race {
-        --background: color-mix(in srgb, var(--race-red) 5%, black 95%);
+        --background: color-mix(in srgb, var(--race-red) 8%, black 92%);
         --foreground: color-mix(in srgb, var(--race-bronze) 15%, white 85%);
         --primary: var(--race-bronze);
         --primary-foreground: white;
@@ -166,6 +182,20 @@
         --muted: var(--race-black);
         --muted-foreground: var(--race-leather-mocha);
         --accent: var(--race-leather-mocha);
+
+        .pop-up-100 {
+            @apply backdrop-brightness-200;
+            box-shadow: 0 0 20px #ffffff20;
+            border: solid 1px
+                color-mix(in srgb, var(--race-bronze) 20%, transparent);
+        }
+
+        .pop-up-200 {
+            @apply backdrop-brightness-300;
+            box-shadow: 0 0 20px #ffffff25;
+            border: solid 1px
+                color-mix(in srgb, var(--race-bronze) 30%, transparent);
+        }
     }
 
     .soothing {
@@ -174,10 +204,26 @@
         --primary: var(--soothing-olive);
         --primary-foreground: white;
         --secondary: var(--soothing-green);
-        --secondary-foreground: color-mix(in srgb, var(--soothing-olive) 15%, var(--soothing-lime) 75%);
+        --secondary-foreground: color-mix(
+            in srgb,
+            var(--soothing-olive) 15%,
+            var(--soothing-lime) 75%
+        );
         --muted: var(--soothing-gray);
         --muted-foreground: var(--soothing-muted-green);
         --accent: var(--soothing-lime);
+
+        .pop-up-100 {
+            @apply backdrop-brightness-105;
+            box-shadow: 0 0 20px #00000020;
+            border: solid 1px #fff2;
+        }
+
+        .pop-up-200 {
+            @apply backdrop-brightness-110;
+            box-shadow: 0 0 20px #00000035;
+            border: solid 1px #fff3;
+        }
     }
 
     .mono {
@@ -190,6 +236,22 @@
         --muted: var(--mono-slate);
         --muted-foreground: var(--mono-gray);
         --accent: var(--mono-slate);
+
+        .pop-up-100 {
+            @apply backdrop-brightness-95;
+            box-shadow: 0 0 20px
+                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent);
+            border: solid 1px
+                color-mix(in srgb, var(--mono-slate) 10%, transparent);
+        }
+
+        .pop-up-200 {
+            @apply backdrop-brightness-90;
+            box-shadow: 0 0 20px
+                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent);
+            border: solid 1px
+                color-mix(in srgb, var(--mono-slate) 10%, transparent);
+        }
     }
 
     .luxe {
@@ -202,6 +264,22 @@
         --muted: var(--luxe-gray);
         --muted-foreground: var(--luxe-light-gray);
         --accent: var(--luxe-beige);
+
+        .pop-up-100 {
+            @apply backdrop-brightness-95;
+            box-shadow: 0 0 20px
+                color-mix(in srgb, var(--luxe-green) 20%, transparent);
+            border: solid 1px
+                color-mix(in srgb, var(--luxe-green) 5%, transparent);
+        }
+
+        .pop-up-200 {
+            @apply backdrop-brightness-90;
+            box-shadow: 0 0 20px
+                color-mix(in srgb, var(--luxe-green) 20%, transparent);
+            border: solid 1px
+                color-mix(in srgb, var(--luxe-green) 5%, transparent);
+        }
     }
 
     * {

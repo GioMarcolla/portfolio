@@ -15,6 +15,7 @@ export const useExperienceStore = create(
                 DeepOmit<ExperienceType, ExperienceHelpers>[]
             >("/experience");
 
+            console.log("Fetched experience data:", res.data);
             return parseExperience(res.data);
         } catch (err) {
             if (axios.isAxiosError(err)) {

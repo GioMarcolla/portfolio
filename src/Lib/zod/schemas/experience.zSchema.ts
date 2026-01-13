@@ -1,6 +1,7 @@
 import { z } from "zod";
 import {
     BasicDateSchema,
+    BasicHighlightsSchema,
     BasicLocationSchema,
     SkillSchema,
 } from "@/Lib/zod/schemas";
@@ -34,14 +35,14 @@ export const ExperienceSchema = z.object({
             "C-Suite",
         ])
         .optional(),
-    Description: z.string(),
-    Responsibilities: z.string(),
+    Description: z.string().array(),
+    Responsibilities: z.string().array(),
     Achievements: z.string().optional(),
     DateStarted: BasicDateSchema,
     DateEnd: BasicDateSchema.optional(),
     CurrentJob: z.boolean(),
     Skills: z.array(SkillSchema).optional(),
-
+    Highlights: BasicHighlightsSchema.array().optional(),
     ...helpers,
 });
 

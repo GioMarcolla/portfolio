@@ -5,3 +5,5 @@ export * from "./biodata.zSchema";
 export * from "./education.zSchema";
 export * from "./experience.zSchema";
 export * from "./skill.zSchema";
+export * from "./basicHighlights.zSchema";
+export * from "./image.zSchema";

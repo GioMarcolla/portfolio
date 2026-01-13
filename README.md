@@ -6,7 +6,6 @@ API reposiroty: https://github.com/GioMarcolla/portfolio-api
 
 First, run the development server:
 
-```bash
 # Giovanni Marcolla — Portfolio
 
 Personal portfolio built with Next.js (App Router) showcasing projects, experience, and bio for Giovanni Marcolla.

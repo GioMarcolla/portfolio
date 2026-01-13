@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import ThemeToggleButton from "@/Components/ThemeToggleButton";
 
@@ -19,7 +19,7 @@ import {
     CertificateIcon,
 } from "../UI/Icons";
 
-const Navbar: FC = () => {
+const Navbar = React.memo(() => {
     const [isMdUp, setIsMdUp] = useState<boolean>(false);
 
     useEffect(() => {
@@ -33,10 +33,8 @@ const Navbar: FC = () => {
         return () => window.removeEventListener("resize", checkScreenSize);
     }, []);
 
-    const SelectedNavbar = isMdUp ? FixedNavbar : MobileNavbar;
-
-    return (
-        <SelectedNavbar className="bg-background border-primary border-r-1">
+    const content = useMemo(() => {
+        return (
             <div className="flex flex-col flex-1 justify-between items-center pt-8 md:pt-0">
                 <div>
                     <Image
@@ -58,15 +56,16 @@ const Navbar: FC = () => {
                     className="flex flex-col items-center gap-8"
                 >
                     <MenuButton
-                        icon={<HomeIcon className="size-8" />}
+                        IconComponent={HomeIcon}
                         tooltipText={"Home"}
                         path="/"
                         name="Home"
+                        className="hover:bounce-once"
                     >
                         <p className="md:hidden mb-4">Home</p>
                     </MenuButton>
                     <MenuButton
-                        icon={<WorkIcon className="size-8" />}
+                        IconComponent={WorkIcon}
                         tooltipText={"Work Experience"}
                         path="/experience"
                         name="Experience"
@@ -74,7 +73,7 @@ const Navbar: FC = () => {
                         <p className="md:hidden mb-4">Experience</p>
                     </MenuButton>
                     <MenuButton
-                        icon={<ProjectIcon className="size-8" />}
+                        IconComponent={ProjectIcon}
                         tooltipText={"Projects"}
                         path="/projects"
                         name="Projects"
@@ -82,7 +81,7 @@ const Navbar: FC = () => {
                         <p className="md:hidden mb-4">Projects</p>
                     </MenuButton>
                     <MenuButton
-                        icon={<EventIcon className="size-8" />}
+                        IconComponent={EventIcon}
                         tooltipText={"Events"}
                         path="/events"
                         name="Events"
@@ -90,7 +89,7 @@ const Navbar: FC = () => {
                         <p className="md:hidden mb-4">Events</p>
                     </MenuButton>
                     <MenuButton
-                        icon={<CertificateIcon className="size-8" />}
+                        IconComponent={CertificateIcon}
                         tooltipText={"Certifications"}
                         path="/certifications"
                         name="Certifications"
@@ -110,9 +109,9 @@ const Navbar: FC = () => {
                                     src={"/assets/images/inbug-black.png"}
                                     className={cn(
                                         "w-auto h-6 md:h-4",
-                                        "vapor:!invert",
-                                        "race:!invert",
-                                        "gloomy:!invert"
+                                        "vapor:invert!",
+                                        "race:invert!",
+                                        "gloomy:invert!"
                                     )}
                                     width={16}
                                     height={16}
@@ -130,9 +129,9 @@ const Navbar: FC = () => {
                                     src={"/assets/images/github-mark.png"}
                                     className={cn(
                                         "w-auto h-6 md:h-4",
-                                        "vapor:!invert",
-                                        "race:!invert",
-                                        "gloomy:!invert"
+                                        "vapor:invert!",
+                                        "race:invert!",
+                                        "gloomy:invert!"
                                     )}
                                     width={16}
                                     height={16}
@@ -144,8 +143,30 @@ const Navbar: FC = () => {
                     <ThemeToggleButton />
                 </div>
             </div>
-        </SelectedNavbar>
+        );
+    }, []);
+
+    return (
+        <>
+            <MobileNavbar
+                className={
+                    "bg-background border-t-0! border-b-0! border-l-0! pop-up-100" +
+                    (isMdUp ? " hidden" : "")
+                }
+            >
+                {content}
+            </MobileNavbar>
+
+            <FixedNavbar
+                className={
+                    "bg-background border-t-0! border-b-0! border-l-0! pop-up-100" +
+                    (isMdUp ? "" : " hidden")
+                }
+            >
+                {content}
+            </FixedNavbar>
+        </>
     );
-};
+});
 
 export default Navbar;

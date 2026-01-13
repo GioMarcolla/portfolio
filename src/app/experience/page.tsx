@@ -49,7 +49,7 @@ const ExperiencePage = ({}: Props) => {
                             className={cn(
                                 "shadow-none! p-0 border-0 rounded-none h-auto text-foreground!",
                                 "hover:text-accent! hover:cursor-pointer",
-                                "data-[state=active]:border-primary! data-[state=active]:border-b!"
+                                "data-[state=active]:border-primary! data-[state=active]:border-b-2!"
                             )}
                         >
                             <p className="text-inherit text-lg">

@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { ComponentPropsWithoutRef, useEffect, useState } from "react";
-import { Button } from "../UI/button";
+import { Button } from "@/Components/UI/button";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { Primitive } from "@radix-ui/react-primitive";
 import { ArrowRight } from "lucide-react";
 import { BiodataType } from "@/Lib/zod/schemas";
 import { useBiodataStore } from "@/Lib/Stores/BiodataStore";
+import AnimatedButton from "@/Components/UI/AnimatedButton";
 
 type Props = {} & ComponentPropsWithoutRef<typeof Primitive.div>;
 
@@ -38,7 +39,7 @@ const StyledIntro = ({ className }: Props) => {
                 </h1>
                 <br />
                 <p className="font-black text-2xl">
-                    <span className="left-0 bg-clip-text bg-gradient-to-r from-primary to-secondary text-transparent text-3xl">
+                    <span className="left-0 bg-clip-text bg-linear-to-r from-primary to-secondary text-transparent text-3xl">
                         {` Multidisciplinary `}
                     </span>
                     <span>{Biodata?.Profession || `Computer Engineer`} </span>
@@ -64,22 +65,22 @@ const StyledIntro = ({ className }: Props) => {
             </div>
 
             <div className="flex justify-center items-center gap-4 mt-8 h-full">
-                <Link href={"/experience"}>
-                    <Button className="hover:cursor-pointer pop-up-100">
+                <AnimatedButton className="hover:cursor-pointer pop-up-100">
+                    <Link href={"/experience"} className="flex flex-row justify-center items-center gap-2">
                         <p className="font-inter font-medium">
                             Work Experience
                         </p>
                         <ArrowRight />
-                    </Button>
-                </Link>
-                <Link href={"/projects"}>
-                    <Button className="hover:cursor-pointer pop-up-100-[100%]">
+                    </Link>
+                </AnimatedButton>
+                <AnimatedButton className="hover:cursor-pointer pop-up-100">
+                    <Link href={"/projects"} className="flex flex-row justify-center items-center gap-2">
                         <p className="font-inter font-medium">
                             Checkout my projects
                         </p>
                         <ArrowRight />
-                    </Button>
-                </Link>
+                    </Link>
+                </AnimatedButton>
             </div>
         </div>
     );

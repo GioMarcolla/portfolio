@@ -43,7 +43,7 @@ const MobileNavbar: FC<Props> = ({ children, className, ...props }) => {
     return (
         <div
             className={cn(
-                "flex flex-col justify-between items-center bg-background fixed z-10",
+                "z-10 fixed flex flex-col justify-between items-center bg-background",
                 open ? "w-fit" : "w-0",
                 className
             )}

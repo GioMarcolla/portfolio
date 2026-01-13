@@ -128,17 +128,17 @@
         --accent: var(--vapor-dark-blue);
 
         .pop-up-100 {
-            @apply backdrop-brightness-150;
-            box-shadow: 0 0 20px #ffffff20;
+            @apply backdrop-brightness-125;
+            box-shadow: 0 0 20px #ffffff20 !important;
             border: solid 1px
-                color-mix(in srgb, var(--vapor-blue) 20%, transparent);
+                color-mix(in srgb, var(--vapor-blue) 20%, transparent) !important;
         }
 
         .pop-up-200 {
-            @apply backdrop-brightness-200;
-            box-shadow: 0 0 20px #ffffff25;
+            @apply backdrop-brightness-175;
+            box-shadow: 0 0 20px #ffffff25 !important;
             border: solid 1px
-                color-mix(in srgb, var(--vapor-blue) 30%, transparent);
+                color-mix(in srgb, var(--vapor-blue) 30%, transparent) !important;
         }
     }
 
@@ -159,16 +159,16 @@
 
         .pop-up-100 {
             @apply backdrop-brightness-150;
-            box-shadow: 0 0 20px #ffffff20;
+            box-shadow: 0 0 20px #ffffff20 !important;
             border: solid 1px
-                color-mix(in srgb, var(--gloomy-blue) 20%, transparent);
+                color-mix(in srgb, var(--gloomy-blue) 20%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-200;
-            box-shadow: 0 0 20px #ffffff25;
+            box-shadow: 0 0 20px #ffffff25 !important;
             border: solid 1px
-                color-mix(in srgb, var(--gloomy-blue) 30%, transparent);
+                color-mix(in srgb, var(--gloomy-blue) 30%, transparent) !important;
         }
     }
 
@@ -185,16 +185,16 @@
 
         .pop-up-100 {
             @apply backdrop-brightness-200;
-            box-shadow: 0 0 20px #ffffff20;
+            box-shadow: 0 0 20px #ffffff20 !important;
             border: solid 1px
-                color-mix(in srgb, var(--race-bronze) 20%, transparent);
+                color-mix(in srgb, var(--race-bronze) 20%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-300;
-            box-shadow: 0 0 20px #ffffff25;
+            box-shadow: 0 0 20px #ffffff25 !important;
             border: solid 1px
-                color-mix(in srgb, var(--race-bronze) 30%, transparent);
+                color-mix(in srgb, var(--race-bronze) 30%, transparent) !important;
         }
     }
 
@@ -215,14 +215,14 @@
 
         .pop-up-100 {
             @apply backdrop-brightness-105;
-            box-shadow: 0 0 20px #00000020;
-            border: solid 1px #fff2;
+            box-shadow: 0 0 20px #00000020 !important;
+            border: solid 1px #fff2 !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-110;
-            box-shadow: 0 0 20px #00000035;
-            border: solid 1px #fff3;
+            box-shadow: 0 0 20px #00000035 !important;
+            border: solid 1px #fff3 !important;
         }
     }
 
@@ -240,17 +240,17 @@
         .pop-up-100 {
             @apply backdrop-brightness-95;
             box-shadow: 0 0 20px
-                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent);
+                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent) !important;
             border: solid 1px
-                color-mix(in srgb, var(--mono-slate) 10%, transparent);
+                color-mix(in srgb, var(--mono-slate) 10%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-90;
             box-shadow: 0 0 20px
-                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent);
+                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent) !important;
             border: solid 1px
-                color-mix(in srgb, var(--mono-slate) 10%, transparent);
+                color-mix(in srgb, var(--mono-slate) 10%, transparent) !important;
         }
     }
 
@@ -268,17 +268,17 @@
         .pop-up-100 {
             @apply backdrop-brightness-95;
             box-shadow: 0 0 20px
-                color-mix(in srgb, var(--luxe-green) 20%, transparent);
+                color-mix(in srgb, var(--luxe-green) 20%, transparent) !important;
             border: solid 1px
-                color-mix(in srgb, var(--luxe-green) 5%, transparent);
+                color-mix(in srgb, var(--luxe-green) 5%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-90;
             box-shadow: 0 0 20px
-                color-mix(in srgb, var(--luxe-green) 20%, transparent);
+                color-mix(in srgb, var(--luxe-green) 20%, transparent) !important;
             border: solid 1px
-                color-mix(in srgb, var(--luxe-green) 5%, transparent);
+                color-mix(in srgb, var(--luxe-green) 5%, transparent) !important;
         }
     }
 

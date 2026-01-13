@@ -84,9 +84,9 @@ const IntroMozaic = ({ className }: Props) => {
                     alt="Next.js Logo"
                     className={cn(
                         "mt-auto max-h-[60%] object-contain",
-                        "vapor:!invert",
-                        "race:!invert",
-                        "gloomy:!invert"
+                        "vapor:invert!",
+                        "race:invert!",
+                        "gloomy:invert!"
                     )}
                     width={2000}
                     height={404}

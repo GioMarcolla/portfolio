@@ -1,11 +1,5 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
 # Giovanni Marcolla — Portfolio
+API reposiroty: https://github.com/GioMarcolla/portfolio-api
 
 Personal portfolio built with Next.js (App Router) showcasing projects, experience, and bio for Giovanni Marcolla.
 

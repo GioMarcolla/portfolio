@@ -39,7 +39,7 @@ export const ImageViewer: FC<ImageViewerProps> = ({
     return (
         <div className={cn("", className)}>
             {/* Trigger Thumbnails */}
-            <div onClick={() => handleOpen(true)} className="cursor-pointer">
+            <div onClick={() => handleOpen(true)} className="h-full! cursor-pointer">
                 {children}
             </div>
 

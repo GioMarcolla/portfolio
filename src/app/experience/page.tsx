@@ -33,7 +33,7 @@ const ExperiencePage = ({}: Props) => {
                     ? ExperienceData[0].JobTitle.replaceAll(" ", "-").toLowerCase()
                     : ""
             }
-            className="max-w-full max-h-full"
+            className="max-w-full h-dvh! max-h-dvh!"
         >
             <TabsList
                 className="flex flex-row justify-start gap-4 bg-transparent px-8 pt-8 pb-4 w-full min-w-full h-auto max-h-10 overflow-scroll no-scrollbar"
@@ -47,9 +47,9 @@ const ExperiencePage = ({}: Props) => {
                                 "-"
                             ).toLowerCase()}
                             className={cn(
-                                "!shadow-none p-0 border-0 rounded-none h-auto !text-foreground",
-                                "hover:!text-accent hover:cursor-pointer",
-                                "data-[state=active]:!border-primary border-b-1"
+                                "shadow-none! p-0 border-0 rounded-none h-auto text-foreground!",
+                                "hover:text-accent! hover:cursor-pointer",
+                                "data-[state=active]:border-primary! data-[state=active]:border-b!"
                             )}
                         >
                             <p className="text-inherit text-lg">
@@ -64,8 +64,7 @@ const ExperiencePage = ({}: Props) => {
                     <TabsContent
                         key={`exp-${exp.id}`}
                         value={exp.JobTitle.replaceAll(" ", "-").toLowerCase()}
-                        // className="h-full max-h-full overflow-scroll"
-                        className="h-[calc(100dvh-3rem)] max-h-[calc(100dvh-3rem)] overflow-scroll"
+                        className="h-[calc(100dvh-3rem)]! max-h-[calc(100dvh-3rem)]! overflow-scroll"
                     >
                         <ExperienceContent data={exp} />
                     </TabsContent>

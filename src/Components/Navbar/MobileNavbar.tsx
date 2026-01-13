@@ -43,7 +43,7 @@ const MobileNavbar: FC<Props> = ({ children, className, ...props }) => {
     return (
         <div
             className={cn(
-                "flex flex-col justify-between items-center bg-background fixed z-10",
+                "z-10 fixed flex flex-col justify-between items-center bg-background",
                 open ? "w-fit" : "w-0",
                 className
             )}
@@ -59,18 +59,18 @@ const MobileNavbar: FC<Props> = ({ children, className, ...props }) => {
             <Button
                 onClick={toggleMenu}
                 className={cn(
-                    "left-0 z-100 absolute bg-transparent w-[32px] h-[32px] text-text",
+                    "left-0 z-100 absolute bg-transparent w-8 h-8 text-text",
                     "md:hidden"
                 )}
                 variant="ghost"
             >
-                {!open && <Menu className="!w-full !h-auto" />}
-                {open && <ArrowLeft className="!w-full !h-auto" />}
+                {!open && <Menu className="w-full! h-auto!" />}
+                {open && <ArrowLeft className="w-full! h-auto!" />}
             </Button>
             <div
                 className={cn(
-                    "flex flex-col items-center bg-transparent p-2 border-secondary-100 border-r-1 w-fit min-w-fit h-dvh min-h-dvh max-h-dvh",
-                    "md:!translate-x-0",
+                    "flex flex-col items-center bg-transparent p-2 border-secondary-100 border-r w-fit min-w-fit h-dvh min-h-dvh max-h-dvh",
+                    "md:translate-x-0!",
                     open ? "translate-x-0 w-fit" : "-translate-x-full w-0",
                     "transition-transform duration-300 ease-in-out",
                     "dark:border-secondary-300"

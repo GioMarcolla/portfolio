@@ -34,11 +34,11 @@ const ThemeToggleButton = () => {
                 <Button
                     variant="outline"
                     size="icon"
-                    className="group justify-between gap-1 p-1 w-full min-w-fit h-auto"
+                    className="group justify-between gap-1 p-1 border-primary! w-full min-w-fit h-auto"
                 >
                     <Sun
                         className={cn(
-                            "w-[1.2rem] h-[1.2rem] rotate-0  scale-100  transition-all",
+                            "w-[1.2rem] h-[1.2rem] rotate-0 scale-100 transition-all",
                             "vapor:-rotate-90 vapor:scale-0",
                             "race:-rotate-90 race:scale-0",
                             "gloomy:-rotate-90 gloomy:scale-0",
@@ -56,14 +56,14 @@ const ThemeToggleButton = () => {
                     />
                     <span className="sr-only">Toggle theme</span>
                     <ChevronDownIcon
-                        className="top-[1px] relative ml-1 size-3 group-data-[state=open]:rotate-180 transition duration-300"
+                        className="top-px relative ml-1 size-3 group-data-[state=open]:rotate-180 transition duration-300"
                         aria-hidden="true"
                     />
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
                 align="end"
-                className="bg-background border-0 shadow-md shadow-accent"
+                className="bg-background border-none pop-up-100"
             >
                 {themes.map((themeName) => (
                     <DropdownMenuItem

@@ -32,13 +32,13 @@ const IntroMozaic = ({ className }: Props) => {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-2 col-span-1 row-span-5">
-                <div className="relative flex-1 w-full h-full">
+            <div className="flex flex-col gap-2 col-span-1 row-span-5 max-h-full">
+                <div className="relative flex-1 w-full h-full max-h-[50%]">
                     <Image
                         src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-S0BWUEsSWO5HinuqiJMV2eZLJqTSQR.png"
                         alt="Vaadin Logo"
                         className={cn(
-                            "h-auto object-contain",
+                            "h-auto max-h-full object-contain",
                             "vapor:hidden",
                             "race:hidden",
                             "gloomy:hidden"
@@ -50,7 +50,7 @@ const IntroMozaic = ({ className }: Props) => {
                         src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/vaadin-inverted-DAvtw7VGekFbk72B15BuEF9HOMNjJj.png"
                         alt="Vaadin Logo"
                         className={cn(
-                            "hidden h-auto object-contain",
+                            "hidden h-auto max-h-full object-contain",
                             "vapor:block",
                             "race:block",
                             "gloomy:block"
@@ -59,11 +59,11 @@ const IntroMozaic = ({ className }: Props) => {
                         width={485}
                     />
                 </div>
-                <div className="relative flex-1 w-full h-full">
+                <div className="relative flex-1 w-full h-full max-h-[50%]">
                     <Image
                         src="https://hco7caxbp8v7ula1.public.blob.vercel-storage.com/spring-boot-DF1LGa2xOv4U832STDSp1w99Dr1xBJ.png"
                         alt="Spring Boot Logo"
-                        className="h-auto object-contain"
+                        className="h-auto max-h-full object-contain"
                         height={2000}
                         width={515}
                     />
@@ -84,9 +84,9 @@ const IntroMozaic = ({ className }: Props) => {
                     alt="Next.js Logo"
                     className={cn(
                         "mt-auto max-h-[60%] object-contain",
-                        "vapor:!invert",
-                        "race:!invert",
-                        "gloomy:!invert"
+                        "vapor:invert!",
+                        "race:invert!",
+                        "gloomy:invert!"
                     )}
                     width={2000}
                     height={404}

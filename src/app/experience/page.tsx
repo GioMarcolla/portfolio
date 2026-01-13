@@ -16,7 +16,7 @@ const ExperiencePage = ({}: Props) => {
 
     useEffect(() => {
         getExperience()
-            .then((res) => setExperienceData(res.reverse()))
+            .then((res) => setExperienceData([...res].reverse()))
             .catch(console.error);
     }, [getExperience]);
 

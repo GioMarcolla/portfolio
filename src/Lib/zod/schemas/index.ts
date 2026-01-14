@@ -7,3 +7,4 @@ export * from "./experience.zSchema";
 export * from "./skill.zSchema";
 export * from "./basicHighlights.zSchema";
 export * from "./image.zSchema";
+export * from "./project.zSchema";

@@ -1,15 +1,15 @@
 import ExperienceDetails from "@/Components/ExperienceDetails";
 import ExperienceMozaic from "@/Components/ExperienceMozaic";
 import { cn } from "@/Lib/Utils/shadCNUtils";
-import { ExperienceType } from "@/Lib/zod/schemas";
+import { ProjectType } from "@/Lib/zod/schemas";
 import { motion } from "framer-motion";
 import { FC } from "react";
 
 type Props = {
-    data: ExperienceType;
+    data: ProjectType;
 };
 
-const ExperienceContent: FC<Props> = ({ data }: Props) => {
+const ProjectContent: FC<Props> = ({ data }: Props) => {
     const hasHighlights = () => !!data?.Highlights?.length;
 
     return (
@@ -54,4 +54,4 @@ const ExperienceContent: FC<Props> = ({ data }: Props) => {
     );
 };
 
-export default ExperienceContent;
+export default ProjectContent;

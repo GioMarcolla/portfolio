@@ -3,10 +3,10 @@ import { ComponentPropsWithoutRef, FC } from "react";
 import { Primitive } from "@radix-ui/react-primitive";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { geDurantionString } from "@/Lib/Utils/DateUtils";
-import { ExperienceType } from "@/Lib/zod/schemas";
+import { ExperienceType, ProjectType } from "@/Lib/zod/schemas";
 
 type Props = {
-    data: ExperienceType;
+    data: ExperienceType | ProjectType;
 } & ComponentPropsWithoutRef<typeof Primitive.div>;
 
 const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
@@ -18,17 +18,24 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                     <span className="bg-clip-text bg-linear-to-r from-primary to-secondary text-transparent">
                         @
                     </span>{" "}
-                    {data.CompanyName}
+                    {"CompanyName" in data
+                        ? data.CompanyName
+                        : data.ProjectName}
                 </h1>
                 <p>
-                    {`Presential | ${data.JobType} | ${data.Location} | ${
-                        data.DateStarted
-                    } - ${data.DateEnd || "Current"} (${geDurantionString(
-                        data.DateStarted,
-                        data.DateEnd
-                    )})`}
+                    {`${"ProjectName" in data ? "Remote" : "Presential"}${
+                        "JobType" in data ? " | " + data.JobType : ""
+                    } | ${data.Location} | ${data.DateStarted} - ${
+                        data.DateEnd || "Current"
+                    } (${geDurantionString(data.DateStarted, data.DateEnd)})`}
                 </p>
             </div>
+            {"ProjectName" in data && (
+                <div>
+                    <span className="font-bold text-xl">Project Description: </span>
+                    <span>{data.Responsibilities.join(", ").concat(".")}</span>
+                </div>
+            )}
             <div className="flex flex-col gap-2 pl-2">
                 {data.Description.map((topic: string, index: number) => {
                     return (
@@ -41,12 +48,14 @@ const ExperienceDetails: FC<Props> = ({ data, className }: Props) => {
                     );
                 })}
             </div>
-            <div>
-                <h1 className="font-bold text-xl">Responsibilities:</h1>
-                <p className="pl-2">
-                    {data.Responsibilities.join(", ").concat(".")}
-                </p>
-            </div>
+            {"CompanyName" in data && (
+                <div>
+                    <h1 className="font-bold text-xl">Responsibilities:</h1>
+                    <p className="pl-2">
+                        {data.Responsibilities.join(", ").concat(".")}
+                    </p>
+                </div>
+            )}
             <div></div>
         </div>
     );

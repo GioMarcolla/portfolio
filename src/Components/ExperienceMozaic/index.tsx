@@ -1,12 +1,12 @@
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { ComponentPropsWithoutRef, FC } from "react";
 import { Primitive } from "@radix-ui/react-primitive";
-import { ExperienceType } from "@/Lib/zod/schemas";
+import { ExperienceType, ProjectType } from "@/Lib/zod/schemas";
 import Image from "next/image";
 import { ImageViewer } from "../UI/ImageViewer";
 
 type Props = {
-    data: ExperienceType;
+    data: ExperienceType | ProjectType;
 } & ComponentPropsWithoutRef<typeof Primitive.div>;
 
 const ExperienceMozaic: FC<Props> = ({ data, className }: Props) => {

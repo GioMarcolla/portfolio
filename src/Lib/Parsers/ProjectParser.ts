@@ -1,39 +1,35 @@
-import { ExperienceHelpers, ExperienceType } from "@/Lib/zod/schemas";
+import { ProjectHelpers, ProjectType } from "@/Lib/zod/schemas";
 import { DeepOmit } from "@/Lib/Utils/TypeUtils";
 
-export const parseExperience = (
-    newData: DeepOmit<ExperienceType, ExperienceHelpers>[]
-): ExperienceType[] => {
+export const parseProject = (
+    newData: DeepOmit<ProjectType, ProjectHelpers>[]
+): ProjectType[] => {
     return newData.map((entry) => {
-        const experience = entry as ExperienceType;
+        const project = entry as ProjectType;
 
-        experience.toString = function () {
-            return `${this.Level} ${this.JobTitle} at ${this.CompanyName}${
-                this.Department ? " - " + this.Department : ""
-            }${this.Team ? " " + this.Team + " team" : ""} from ${
-                this.DateStarted
-            } to ${this.DateEnd}.`;
+        project.toString = function () {
+            return `${this.JobTitle} at ${this.ProjectName} from ${this.DateStarted} to ${this.DateEnd}.`;
         };
 
-        experience.DateStarted.toString = function () {
+        project.DateStarted.toString = function () {
             return [this.Day, this.Month, this.Year].filter(Boolean).join("/");
         };
 
-        if (experience.DateEnd) {
-            experience.DateEnd.toString = function () {
+        if (project.DateEnd) {
+            project.DateEnd.toString = function () {
                 return [this.Day, this.Month, this.Year]
                     .filter(Boolean)
                     .join("/");
             };
         }
 
-        experience.Location.toString = function () {
+        project.Location.toString = function () {
             return `${this.City ? this.City + ", " : ""}${
                 this.State ? this.State + ", " : ""
             }${this.Country}`;
         };
 
-        experience.Duration = function () {
+        project.Duration = function () {
             let dateEnd: typeof this.DateEnd = this.DateEnd;
 
             if (!dateEnd) {
@@ -60,6 +56,6 @@ export const parseExperience = (
             return [yearStr, monthStr].filter(Boolean).join(" ") || "1st month";
         };
 
-        return experience;
+        return project;
     });
 };

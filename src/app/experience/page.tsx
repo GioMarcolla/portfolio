@@ -20,6 +20,14 @@ const ExperiencePage = ({}: Props) => {
             .catch(console.error);
     }, [getExperience]);
 
+    const getTabValue = (exp: ExperienceType) => {
+        return (
+            exp.JobTitle.replaceAll(" ", "-").toLowerCase() +
+            "-" +
+            exp.CompanyName.replaceAll("", "-").toLowerCase()
+        );
+    };
+
     return ExperienceData.length > 0 ? (
         <Tabs
             // Use a key to force remount when ExperienceData changes
@@ -30,22 +38,17 @@ const ExperiencePage = ({}: Props) => {
             }
             defaultValue={
                 ExperienceData && ExperienceData.length > 0
-                    ? ExperienceData[0].JobTitle.replaceAll(" ", "-").toLowerCase()
+                    ? getTabValue(ExperienceData[0])
                     : ""
             }
             className="max-w-full h-dvh! max-h-dvh!"
         >
-            <TabsList
-                className="flex flex-row justify-start gap-4 bg-transparent px-8 pt-8 pb-4 w-full min-w-full h-auto max-h-10 overflow-scroll no-scrollbar"
-            >
+            <TabsList className="flex flex-row justify-start gap-16 bg-transparent px-8 pt-8 pb-4 w-full min-w-full h-auto max-h-10 overflow-scroll no-scrollbar">
                 {ExperienceData?.map((exp) => {
                     return (
                         <TabsTrigger
                             key={`exp-${exp.id}`}
-                            value={exp.JobTitle.replaceAll(
-                                " ",
-                                "-"
-                            ).toLowerCase()}
+                            value={getTabValue(exp)}
                             className={cn(
                                 "shadow-none! p-0 border-0 rounded-none h-auto text-foreground!",
                                 "hover:text-accent! hover:cursor-pointer",
@@ -53,7 +56,7 @@ const ExperiencePage = ({}: Props) => {
                             )}
                         >
                             <p className="text-inherit text-lg">
-                                {exp.JobTitle}
+                                {exp.JobTitle+ " @ " + exp.CompanyName}
                             </p>
                         </TabsTrigger>
                     );
@@ -63,7 +66,7 @@ const ExperiencePage = ({}: Props) => {
                 return (
                     <TabsContent
                         key={`exp-${exp.id}`}
-                        value={exp.JobTitle.replaceAll(" ", "-").toLowerCase()}
+                        value={getTabValue(exp)}
                         className="h-[calc(100dvh-3rem)]! max-h-[calc(100dvh-3rem)]! overflow-scroll"
                     >
                         <ExperienceContent data={exp} />

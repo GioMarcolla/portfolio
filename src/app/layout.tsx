@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import ThemeProvider from "@/Components/UI/NextThemeProvider";
 import Background from "@/Components/UI/Background";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
     title: "Giovanni Marcolla - Full-Stack Developer & Educator",
@@ -55,6 +56,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     <div className="flex bg-transparent m-auto w-dvw min-w-full max-w-dvw h-dvh min-h-full antialiased">
                         <Navbar />
                         <div className="overflow-auto grow">{children}</div>
+                        <SpeedInsights/>
                     </div>
                 </ThemeProvider>
             </body>

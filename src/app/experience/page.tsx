@@ -3,22 +3,28 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/UI/tabs";
 import { useExperienceStore } from "@/Lib/Stores/ExperienceStore";
 import React, { useEffect, useState } from "react";
-import ExperienceContent from "./ExperienceContent";
+import dynamic from "next/dynamic";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { ExperienceType } from "@/Lib/zod/schemas";
-import { LoaderCircle } from "lucide-react";
+import { LoadingState } from "@/Components/UI/LoadingState";
+import { RetryState } from "@/Components/UI/RetryState";
+import { MaxRetriesState } from "@/Components/UI/MaxRetriesState";
+
+// Lazy load ExperienceContent for better code splitting
+const ExperienceContent = dynamic(() => import("./ExperienceContent"), {
+    loading: () => <LoadingState dataType="experience" />
+});
 
 type Props = {};
 
 const ExperiencePage = ({}: Props) => {
-    const getExperience = useExperienceStore((state) => state.getData);
-    const [ExperienceData, setExperienceData] = useState<ExperienceType[]>([]);
+    const { data: ExperienceData, isLoading, error, retryTimeLeft } = useExperienceStore();
 
     useEffect(() => {
-        getExperience()
-            .then((res) => setExperienceData([...res].reverse()))
-            .catch(console.error);
-    }, [getExperience]);
+        useExperienceStore.getState().getData().catch((error) => {
+            console.error("Error fetching experience data: ", error);
+        });
+    }, []);
 
     const getTabValue = (exp: ExperienceType) => {
         return (
@@ -28,23 +34,40 @@ const ExperiencePage = ({}: Props) => {
         );
     };
 
-    return ExperienceData.length > 0 ? (
+    // Show loading state
+    if (isLoading) {
+        return <LoadingState dataType="experience" />;
+    }
+
+    // Show error with retry countdown (only after first failure)
+    if (error && retryTimeLeft > 0) {
+        return <RetryState timeLeft={retryTimeLeft} />;
+    }
+
+    // Show max retries error
+    if (error && retryTimeLeft === 0 && !isLoading) {
+        return <MaxRetriesState />;
+    }
+
+    // Show data when loaded
+    const reversedData = ExperienceData ? [...ExperienceData].reverse() : [];
+    return reversedData.length > 0 ? (
         <Tabs
             // Use a key to force remount when ExperienceData changes
             key={
-                ExperienceData
-                    ? ExperienceData.map((exp) => exp.id).join("-")
+                reversedData
+                    ? reversedData.map((exp) => exp.id).join("-")
                     : "empty"
             }
             defaultValue={
-                ExperienceData && ExperienceData.length > 0
-                    ? getTabValue(ExperienceData[0])
+                reversedData && reversedData.length > 0
+                    ? getTabValue(reversedData[0])
                     : ""
             }
             className="max-w-full h-dvh! max-h-dvh!"
         >
             <TabsList className="flex flex-row justify-start gap-16 bg-transparent px-8 pt-8 pb-4 w-full min-w-full h-auto max-h-10 overflow-scroll no-scrollbar">
-                {ExperienceData?.map((exp) => {
+                {reversedData?.map((exp) => {
                     return (
                         <TabsTrigger
                             key={`exp-${exp.id}`}
@@ -62,7 +85,7 @@ const ExperiencePage = ({}: Props) => {
                     );
                 })}
             </TabsList>
-            {ExperienceData?.map((exp) => {
+            {reversedData?.map((exp) => {
                 return (
                     <TabsContent
                         key={`exp-${exp.id}`}
@@ -74,14 +97,7 @@ const ExperiencePage = ({}: Props) => {
                 );
             })}
         </Tabs>
-    ) : (
-        <div className="flex flex-col justify-center items-center p-8 w-full h-full">
-            <LoaderCircle className="text-primary animate-spin" size={48} />
-            <p className="mt-4 text-foreground text-lg">
-                Loading experience data...
-            </p>
-        </div>
-    );
+    ) : null;
 };
 
 export default ExperiencePage;

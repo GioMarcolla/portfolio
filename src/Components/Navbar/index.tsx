@@ -41,6 +41,7 @@ const Navbar = React.memo(() => {
                         src={"/assets/images/og-image.png"}
                         height={48}
                         width={48}
+                        loading="eager" // LCP image - load immediately
                         className={cn(
                             "mt-8 w-24 h-24",
                             "md:w-12 md:h-12 md:mt-0",
@@ -108,7 +109,7 @@ const Navbar = React.memo(() => {
                                 <Image
                                     src={"/assets/images/inbug-black.png"}
                                     className={cn(
-                                        "w-auto h-6 md:h-4",
+                                        "h-6 w-6 md:h-4 md:w-4",
                                         "vapor:invert!",
                                         "race:invert!",
                                         "gloomy:invert!"
@@ -128,7 +129,7 @@ const Navbar = React.memo(() => {
                                 <Image
                                     src={"/assets/images/github-mark.png"}
                                     className={cn(
-                                        "w-auto h-6 md:h-4",
+                                        "h-6 w-6 md:h-4 md:w-4",
                                         "vapor:invert!",
                                         "race:invert!",
                                         "gloomy:invert!"

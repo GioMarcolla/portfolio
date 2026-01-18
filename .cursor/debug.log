@@ -1,0 +1,582 @@
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:46.109Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:46.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:46.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:55.289Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:55.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:55.717Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:55.807Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:56.724Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:50:56.724Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:03.312Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:06.713Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:06.721Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:18.410Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:18.715Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:18.720Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:18.932Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:19.717Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:19.718Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:27.712Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:27.716Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:28.973Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:29.154Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:29.477Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:29.706Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:29.713Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:29.730Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:43.169Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:43.678Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:43.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:43.718Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:44.717Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:44.718Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:46.908Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:47.713Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:47.713Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:56.117Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:56.713Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:51:56.713Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:39.880Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:39.961Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:39.968Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:40.466Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:22","message":"Projects preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:27","message":"Education preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:22","message":"Projects preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:27","message":"Education preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:22","message":"Projects preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:27","message":"Education preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:50.473Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:22","message":"Projects preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:27","message":"Education preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:50.985Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:50.992Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:51.497Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:52:57.971Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:53:56.032Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:53:56.717Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:53:56.721Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:54:01.051Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:54:01.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:54:01.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading state set to false","data":{"isPreloading":false},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:54:07.385Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading completed and marked as done","data":{"isPreloading":false,"hasPreloaded":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:54:07.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:54:07.714Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading completed and marked as done","data":{"isPreloading":false,"hasPreloaded":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading completed and marked as done","data":{"isPreloading":false,"hasPreloaded":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:55:06.951Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:55:07.041Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"DataProvider.tsx:17","message":"Starting data preloading","data":{"timestamp":"2026-01-18T15:55:07.047Z"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:19","message":"Preloading state set to true","data":{"isPreloading":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:12","message":"Starting data preload","data":{},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/projects","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/education","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/projects"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/education"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:17","message":"Experience preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading completed and marked as done","data":{"isPreloading":false,"hasPreloaded":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:17","message":"Experience preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading completed and marked as done","data":{"isPreloading":false,"hasPreloaded":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"AxiosUtils.ts:35","message":"API error occurred","data":{"code":"ECONNABORTED","message":"timeout of 10000ms exceeded","url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:73","message":"API request failed","data":{"attempt":1,"error":"timeout of 10000ms exceeded"},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:85","message":"Starting retry countdown","data":{"newRetryCount":1,"retryDelay":3000},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"DataPreloader.ts:17","message":"Experience preload failed","data":{"error":"Failed to load data"},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataPreloader.ts:39","message":"Preload results","data":{"fulfilled":4,"rejected":0},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"DataProvider.tsx:22","message":"Preloading completed and marked as done","data":{"isPreloading":false,"hasPreloaded":true},"sessionId":"debug-session","runId":"initial","hypothesisId":"A"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":2,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":1,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"LazyStoreFactory.ts:95","message":"Countdown tick","data":{"timeLeft":0,"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"LazyStoreFactory.ts:99","message":"Countdown finished, starting retry","data":{"retryCount":1},"sessionId":"debug-session","runId":"initial","hypothesisId":"B"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/experience","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/experience"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:23","message":"API request started","data":{"url":"/biodata","baseURL":"http://localhost:3001","fullURL":"http://localhost:3001/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}
+{"location":"AxiosUtils.ts:30","message":"API response received","data":{"status":200,"url":"/biodata"},"sessionId":"debug-session","runId":"initial","hypothesisId":"D"}

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { create } from "zustand";
 
-import { createLazyStore } from "@/Lib/Factories/LazyStoreFactory";
+import { createRetryStore } from "@/Lib/Factories/LazyStoreFactory";
 import { parseBiodata } from "@/Lib/Parsers/BiodataParser";
 import api from "@/Lib/Utils/AxiosUtils";
 
@@ -9,7 +9,7 @@ import { DeepOmit } from "@/Lib/Utils/TypeUtils";
 import { BiodataHelpers, BiodataType } from "../zod/schemas";
 
 export const useBiodataStore = create(
-    createLazyStore<BiodataType>(async () => {
+    createRetryStore<BiodataType>(async () => {
         try {
             const res = await api.get<DeepOmit<BiodataType, BiodataHelpers>>(
                 "/biodata"

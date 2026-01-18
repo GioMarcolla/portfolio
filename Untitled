@@ -1,0 +1,5 @@
+# Set to DEV to use local API baseURL
+NEXT_PUBLIC_MODE=DEV
+# Or point to a remote API when deploying
+NEXT_PUBLIC_API_URL=https://example.com
+NEXT_PUBLIC_API_KEY=your_api_key

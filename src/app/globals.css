@@ -1,7 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/rubik");
 @import url("https://fonts.cdnfonts.com/css/inter");
 @import "tailwindcss";
-@import "tw-animate-css";
 @config "../../tailwind.config.ts";
 
 @tailwind utilities;

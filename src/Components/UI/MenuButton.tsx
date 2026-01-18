@@ -71,7 +71,7 @@ const MenuButton = React.memo(
                 onMouseDown={() => setIsPressed(true)}
             >
                 <Link
-                    href={path}
+                    href={path as any}
                     color="text"
                     className="flex flex-col items-center"
                 >

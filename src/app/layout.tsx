@@ -4,7 +4,9 @@ import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import ThemeProvider from "@/Components/UI/NextThemeProvider";
 import Background from "@/Components/UI/Background";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { DataProvider } from "@/Components/UI/DataProvider";
+import { ServiceWorker } from "@/Components/UI/ServiceWorker";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
     title: "Giovanni Marcolla - Full-Stack Developer & Educator",
@@ -43,7 +45,11 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
             suppressHydrationWarning
             className="text-[8px] md:text-[16px]"
         >
-            <head></head>
+            <head>
+                {/* Optimize font loading performance */}
+                <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+                <link rel="dns-prefetch" href="https://fonts.cdnfonts.com" />
+            </head>
             <body>
                 <ThemeProvider
                     attribute="class"
@@ -55,9 +61,14 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     {/* CSS fallback for older browser without VH/VW support. */}
                     <div className="flex bg-transparent m-auto w-dvw min-w-full max-w-dvw h-dvh min-h-full antialiased">
                         <Navbar />
-                        <div className="overflow-auto grow">{children}</div>
+                        <div className="overflow-auto grow">
+                            <DataProvider>
+                                {children}
+                            </DataProvider>
+                        </div>
                         <SpeedInsights/>
                     </div>
+                    <ServiceWorker />
                 </ThemeProvider>
             </body>
         </html>

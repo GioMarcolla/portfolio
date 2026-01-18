@@ -10,17 +10,14 @@ import { BiodataType } from "@/Lib/zod/schemas";
 import { useBiodataStore } from "@/Lib/Stores/BiodataStore";
 import AnimatedButton from "@/Components/UI/AnimatedButton";
 
+
 type Props = {} & ComponentPropsWithoutRef<typeof Primitive.div>;
 
-const StyledIntro = ({ className }: Props) => {
-    const getBiodata = useBiodataStore((state) => state.getData);
-
-    const [Biodata, setBiodata] = useState<BiodataType | null>(null);
-
-    useEffect(() => {
-        getBiodata().then(setBiodata).catch(console.error);
-    }, [getBiodata]);
-
+// Separate component for content that uses biodata
+const StyledIntroContent = ({
+    biodata,
+    className
+}: { biodata: BiodataType | null } & ComponentPropsWithoutRef<typeof Primitive.div>) => {
     return (
         <div
             className={cn(
@@ -30,19 +27,19 @@ const StyledIntro = ({ className }: Props) => {
         >
             <div>
                 <h1 className="font-inter font-extrabold text-6xl tracking-wider space">
-                    {`${Biodata?.Name.First || "Giovanni"} (${
-                        Biodata?.Nickname || "Gio"
+                    {`${biodata?.Name.First || "Giovanni"} (${
+                        biodata?.Nickname || "Gio"
                     })`}
                 </h1>
                 <h1 className="font-inter font-extrabold text-6xl tracking-wider space">
-                    {`${Biodata?.Name.Last || "Marcolla"} (纪欧)`}
+                    {`${biodata?.Name.Last || "Marcolla"} (纪欧)`}
                 </h1>
                 <br />
                 <p className="font-black text-2xl">
                     <span className="left-0 bg-clip-text bg-linear-to-r from-primary to-secondary text-transparent text-3xl">
                         {` Multidisciplinary `}
                     </span>
-                    <span>{Biodata?.Profession || `Computer Engineer`} </span>
+                    <span>{biodata?.Profession || `Computer Engineer`} </span>
                     <br />
                     <span>Building</span>
                     <span className="relative text-transparent text-3xl italic hallow-stroke">
@@ -84,6 +81,23 @@ const StyledIntro = ({ className }: Props) => {
             </div>
         </div>
     );
+};
+
+const StyledIntro = ({ className }: Props) => {
+    const getBiodata = useBiodataStore((state) => state.getData);
+    const [Biodata, setBiodata] = useState<BiodataType | null>(null);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            getBiodata().then(setBiodata).catch(() => {
+                console.error('Biodata fetch failed, keeping fallback data');
+            });
+        }, 100);
+
+        return () => clearTimeout(timer);
+    }, [getBiodata]);
+
+    return <StyledIntroContent biodata={Biodata} className={className} />;
 };
 
 export default StyledIntro;

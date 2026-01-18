@@ -3,22 +3,28 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/UI/tabs";
 import { useProjectsStore } from "@/Lib/Stores/ProjectsStore";
 import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { ProjectType } from "@/Lib/zod/schemas";
-import { LoaderCircle } from "lucide-react";
-import ProjectContent from "./ProjectContent";
+import { LoadingState } from "@/Components/UI/LoadingState";
+import { RetryState } from "@/Components/UI/RetryState";
+import { MaxRetriesState } from "@/Components/UI/MaxRetriesState";
+
+// Lazy load ProjectContent for better code splitting
+const ProjectContent = dynamic(() => import("./ProjectContent"), {
+    loading: () => <LoadingState dataType="project" />
+});
 
 type Props = {};
 
 const ProjectsPage = ({}: Props) => {
-    const getProjects = useProjectsStore((state) => state.getData);
-    const [ProjectsData, setProjectsData] = useState<ProjectType[]>([]);
+    const { data: ProjectsData, isLoading, error, retryTimeLeft } = useProjectsStore();
 
     useEffect(() => {
-        getProjects()
-            .then((res) => setProjectsData([...res].reverse()))
-            .catch(console.error);
-    }, [getProjects]);
+        useProjectsStore.getState().getData().catch((error) => {
+            console.error("Error fetching projects data: ", error);
+        });
+    }, []);
 
     const getTabValue = (exp: ProjectType) => {
         return (
@@ -28,23 +34,40 @@ const ProjectsPage = ({}: Props) => {
         );
     };
 
-    return ProjectsData.length > 0 ? (
+    // Show loading state
+    if (isLoading) {
+        return <LoadingState dataType="project" />;
+    }
+
+    // Show error with retry countdown (only after first failure)
+    if (error && retryTimeLeft > 0) {
+        return <RetryState timeLeft={retryTimeLeft} />;
+    }
+
+    // Show max retries error
+    if (error && retryTimeLeft === 0 && !isLoading) {
+        return <MaxRetriesState />;
+    }
+
+    // Show data when loaded
+    const reversedData = ProjectsData ? [...ProjectsData].reverse() : [];
+    return reversedData.length > 0 ? (
         <Tabs
-            // Use a key to force remount when ExperienceData changes
+            // Use a key to force remount when ProjectsData changes
             key={
-                ProjectsData
-                    ? ProjectsData.map((proj) => proj.id).join("-")
+                reversedData
+                    ? reversedData.map((proj) => proj.id).join("-")
                     : "empty"
             }
             defaultValue={
-                ProjectsData && ProjectsData.length > 0
-                    ? getTabValue(ProjectsData[0])
+                reversedData && reversedData.length > 0
+                    ? getTabValue(reversedData[0])
                     : ""
             }
             className="max-w-full h-dvh! max-h-dvh!"
         >
             <TabsList className="flex flex-row justify-start gap-16 bg-transparent px-8 pt-8 pb-4 w-full min-w-full h-auto max-h-10 overflow-scroll no-scrollbar">
-                {ProjectsData?.map((proj) => {
+                {reversedData?.map((proj) => {
                     return (
                         <TabsTrigger
                             key={`proj-${proj.id}`}
@@ -62,7 +85,7 @@ const ProjectsPage = ({}: Props) => {
                     );
                 })}
             </TabsList>
-            {ProjectsData?.map((proj) => {
+            {reversedData?.map((proj) => {
                 return (
                     <TabsContent
                         key={`proj-${proj.id}`}
@@ -74,14 +97,7 @@ const ProjectsPage = ({}: Props) => {
                 );
             })}
         </Tabs>
-    ) : (
-        <div className="flex flex-col justify-center items-center p-8 w-full h-full">
-            <LoaderCircle className="text-primary animate-spin" size={48} />
-            <p className="mt-4 text-foreground text-lg">
-                Loading Project data...
-            </p>
-        </div>
-    );
+    ) : null;
 };
 
 export default ProjectsPage;

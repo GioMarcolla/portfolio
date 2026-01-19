@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
+import type { Metadata } from "next";
+import { Inter, Rubik } from "next/font/google";
 import Navbar from "@/Components/Navbar";
 import ThemeProvider from "@/Components/UI/NextThemeProvider";
 import Background from "@/Components/UI/Background";
@@ -38,17 +39,26 @@ export const metadata: Metadata = {
     },
 };
 
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-inter'
+});
+
+const rubik = Rubik({
+    subsets: ['latin'], 
+    display: 'swap',
+    variable: '--font-rubik'
+});
+
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html
             lang="en"
             suppressHydrationWarning
-            className="text-[8px] md:text-[16px]"
+            className={`${inter.variable} ${rubik.variable} text-[8px] md:text-[16px]`}
         >
             <head>
-                {/* Optimize font loading performance */}
-                <link rel="preconnect" href="https://fonts.cdnfonts.com" />
-                <link rel="dns-prefetch" href="https://fonts.cdnfonts.com" />
             </head>
             <body>
                 <ThemeProvider

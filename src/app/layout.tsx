@@ -7,7 +7,6 @@ import ThemeProvider from "@/Components/UI/NextThemeProvider";
 import Background from "@/Components/UI/Background";
 import { DataPreloader } from "@/Components/UI/DataPreloader";
 import { ServiceWorker } from "@/Components/UI/ServiceWorker";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
     title: "Giovanni Marcolla - Full-Stack Developer & Educator",
@@ -75,7 +74,6 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                             {children}
                             <DataPreloader />
                         </div>
-                        <SpeedInsights />
                     </div>
                     <ServiceWorker />
                 </ThemeProvider>

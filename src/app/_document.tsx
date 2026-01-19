@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { Metadata } from 'next';
 
 export default function Document() {
     return (
@@ -12,10 +11,6 @@ export default function Document() {
 
                 {/* Preload critical resources */}
                 <link rel="preload" href="/assets/images/og-image.png" as="image" fetchPriority="high" />
-
-                {/* Optimize font loading */}
-                <link rel="preload" href="https://fonts.cdnfonts.com/css/rubik" as="style" />
-                <link rel="preload" href="https://fonts.cdnfonts.com/css/inter" as="style" />
 
                 {/* Security headers */}
                 <meta httpEquiv="X-Content-Type-Options" content="nosniff" />

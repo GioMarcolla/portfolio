@@ -41,17 +41,20 @@ const nextConfig: NextConfig = {
     // Add HTTP/2 server push and caching headers
     async headers() {
         return [
+            // Static assets - aggressive cache
             {
-                source: '/(.*)',
+                source: '/_next/static/(.*)',
                 headers: [
                     {
-                        key: 'Link',
-                        value: [
-                            '</assets/images/og-image.png>; rel=preload; as=image; fetchpriority=high',
-                            '</api/ping>; rel=preload; as=fetch'
-                        ].join(', ')
-                    },
-                    // Cache static assets aggressively
+                        key: 'Cache-Control',
+                        value: 'public, max-age=31536000, immutable'
+                    }
+                ]
+            },
+            // Images - aggressive cache  
+            {
+                source: '/assets/(.*)',
+                headers: [
                     {
                         key: 'Cache-Control',
                         value: 'public, max-age=31536000, immutable'

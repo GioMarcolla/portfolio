@@ -5,7 +5,7 @@ import { Inter, Rubik } from "next/font/google";
 import Navbar from "@/Components/Navbar";
 import ThemeProvider from "@/Components/UI/NextThemeProvider";
 import Background from "@/Components/UI/Background";
-import { DataProvider } from "@/Components/UI/DataProvider";
+// import { DataProvider } from "@/Components/UI/DataProvider";
 import { ServiceWorker } from "@/Components/UI/ServiceWorker";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -72,9 +72,9 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     <div className="flex bg-transparent m-auto w-dvw min-w-full max-w-dvw h-dvh min-h-full antialiased">
                         <Navbar />
                         <div className="overflow-auto grow">
-                            <DataProvider>
+                            {/* <DataProvider> */}
                                 {children}
-                            </DataProvider>
+                            {/* </DataProvider> */}
                         </div>
                         <SpeedInsights/>
                     </div>

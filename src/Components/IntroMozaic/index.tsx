@@ -1,11 +1,7 @@
-import React, { ComponentPropsWithoutRef } from "react";
-import { Primitive } from "@radix-ui/react-primitive";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import Image from "next/image";
 
-type Props = {} & ComponentPropsWithoutRef<typeof Primitive.div>;
-
-const IntroMozaic = React.memo(({ className }: Props) => {
+const IntroMozaic = () => {
     return (
         <div className="gap-4 grid grid-cols-12 grid-rows-12 w-full h-full max-h-full">
             <div className="flex flex-col gap-2 col-span-1 row-span-1"></div>
@@ -246,8 +242,6 @@ const IntroMozaic = React.memo(({ className }: Props) => {
             </div>
         </div>
     );
-});
-
-IntroMozaic.displayName = "IntroMozaic";
+};
 
 export default IntroMozaic;

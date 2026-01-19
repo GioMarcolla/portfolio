@@ -17,7 +17,7 @@ const IntroHero = ({ }: Props) => {
                 <StyledIntro />
             </div>
             <div className="col-span-1 row-span-1 bg-background/5 backdrop-blur-xl p-4 rounded-4xl h-full pop-up-100 animate-slide-in-left ">
-                <IntroMozaic className="h-full" />
+                <IntroMozaic />
             </div>
         </div>
     );

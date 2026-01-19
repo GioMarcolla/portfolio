@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/Components/UI/button";
 import { usePathname } from "next/navigation";
 import AnimatedElement from "@/Components/UI/AnimatedElement";

@@ -1,6 +1,6 @@
 import { cn } from "@/Lib/Utils/shadCNUtils";
-import IntroMozaic from "../IntroMozaic";
 import StyledIntro from "../StyledIntro";
+import IntroMozaic from "../IntroMozaic";
 
 type Props = {};
 

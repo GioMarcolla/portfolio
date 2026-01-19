@@ -294,6 +294,23 @@
         }
     }
 
+    @keyframes slideInBottom {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-in-bottom {
+        animation: slideInBottom 0.8s ease-out forwards;
+
+    }
+
     .animate-slide-in-left {
         animation: slideInLeft 0.8s ease-out forwards;
     }

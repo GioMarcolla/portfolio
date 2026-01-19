@@ -1,10 +1,11 @@
+"use client"
+
 import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 import { Button } from "@/Components/UI/button";
 import Link from "next/link";
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import { usePathname } from "next/navigation";
-import AnimatedElement from "@/Components/UI/AnimatedElement";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 type Props = {
     IconComponent: React.ComponentType<{ className?: string }>;
@@ -13,14 +14,14 @@ type Props = {
     name?: string;
     children?: React.ReactNode;
     iconSize?:
-        | "size-8"
-        | "size-7"
-        | "size-6"
-        | "size-5"
-        | "size-4"
-        | "size-3"
-        | "size-2"
-        | "size-1";
+    | "size-8"
+    | "size-7"
+    | "size-6"
+    | "size-5"
+    | "size-4"
+    | "size-3"
+    | "size-2"
+    | "size-1";
 } & React.ComponentProps<"button">;
 
 const MenuButton = React.memo(
@@ -33,29 +34,15 @@ const MenuButton = React.memo(
         children,
         iconSize = "size-8",
     }: Props) => {
-        const [isHovered, setIsHovered] = useState<boolean>(false);
-        const [isPressed, setIsPressed] = useState<boolean>(false);
         const pathname = usePathname();
 
-        useEffect(() => {
-            setIsHovered(false);
-        }, [pathname]);
-
-        const onTapComplete = () => setIsPressed(false);
-
         const iconElement = (
-            <AnimatedElement
-                isHovered={isHovered}
-                isPressed={isPressed}
-                onTapComplete={onTapComplete}
-            >
-                <IconComponent
-                    className={cn(
-                        pathname === path ? "text-primary" : "",
-                        iconSize
-                    )}
-                />
-            </AnimatedElement>
+            <IconComponent
+                className={cn(
+                    pathname === path ? "text-primary" : "",
+                    iconSize
+                )}
+            />
         );
 
         const ButtonLink = (
@@ -66,9 +53,6 @@ const MenuButton = React.memo(
                     "hover:text-primary/60",
                     className
                 )}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                onMouseDown={() => setIsPressed(true)}
             >
                 <Link
                     href={path as any}

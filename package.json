@@ -6,9 +6,7 @@
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
-        "build:analyze": "node scripts/optimize-build.js && ANALYZE=true next build",
         "deps:check": "depcheck",
-        "optimize": "node scripts/optimize-build.js",
         "start": "next start",
         "lint": "next lint"
     },

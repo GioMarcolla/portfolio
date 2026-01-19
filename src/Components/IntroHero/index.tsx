@@ -1,12 +1,10 @@
 import { cn } from "@/Lib/Utils/shadCNUtils";
 import StyledIntro from "../StyledIntro";
-import dynamic from "next/dynamic";
+import IntroMozaic from "../IntroMozaic";
 
 type Props = {};
 
 const IntroHero = ({ }: Props) => {
-    const IntroMozaicLazy = dynamic(() => import('@/Components/IntroMozaic'), { ssr: false, loading: () => <div className="h-full w-full rounded-2xl bg-secondary/20 animate-pulse" /> });
-
     return (
         <div
             className={cn(
@@ -19,7 +17,7 @@ const IntroHero = ({ }: Props) => {
                 <StyledIntro />
             </div>
             <div className="col-span-1 row-span-1 bg-background/5 backdrop-blur-xl p-4 rounded-4xl h-full pop-up-100 animate-slide-in-left ">
-                <IntroMozaicLazy />
+                <IntroMozaic />
             </div>
         </div>
     );

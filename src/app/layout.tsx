@@ -5,7 +5,7 @@ import { Inter, Rubik } from "next/font/google";
 import Navbar from "@/Components/Navbar";
 import ThemeProvider from "@/Components/UI/NextThemeProvider";
 import Background from "@/Components/UI/Background";
-import { DataProvider } from "@/Components/UI/DataProvider";
+import { DataPreloader } from "@/Components/UI/DataPreloader";
 import { ServiceWorker } from "@/Components/UI/ServiceWorker";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -73,7 +73,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                         <Navbar />
                         <div className="overflow-auto grow">
                             {children}
-                            <DataProvider />
+                            <DataPreloader />
                         </div>
                         <SpeedInsights />
                     </div>

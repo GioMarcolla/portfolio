@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 
 let hasGlobalPreloaded = false;
 
-
-export const DataProvider = () => {
+export const DataPreloader = () => {
     const { preloadData } = useDataPreloader();
     const [isPreloading, setIsPreloading] = useState(false);
 

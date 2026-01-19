@@ -46,7 +46,7 @@ const inter = Inter({
 });
 
 const rubik = Rubik({
-    subsets: ['latin'], 
+    subsets: ['latin'],
     display: 'swap',
     variable: '--font-rubik'
 });
@@ -72,11 +72,10 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     <div className="flex bg-transparent m-auto w-dvw min-w-full max-w-dvw h-dvh min-h-full antialiased">
                         <Navbar />
                         <div className="overflow-auto grow">
-                            <DataProvider>
-                                {children}
-                            </DataProvider>
+                            {children}
+                            <DataProvider />
                         </div>
-                        <SpeedInsights/>
+                        <SpeedInsights />
                     </div>
                     <ServiceWorker />
                 </ThemeProvider>

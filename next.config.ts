@@ -20,10 +20,10 @@ const nextConfig: NextConfig = {
         formats: ['image/webp', 'image/avif'],
     },
 
-    // Enable experimental features for better performance
+    // next.config.ts - Enable proper critical CSS
     experimental: {
         optimizeCss: true,
-        scrollRestoration: true,
+        inlineCss: true, // Extract and inline critical CSS
     },
 
     // Enable typed routes

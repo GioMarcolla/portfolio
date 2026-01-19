@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@config "../../tailwind.config.ts";
+@config "../../tailwind.config.js";
 
 @tailwind utilities;
 
@@ -127,24 +127,20 @@
         .pop-up-100 {
             @apply backdrop-brightness-125;
             box-shadow: 0 0 20px #ffffff20 !important;
-            border: solid 1px
-                color-mix(in srgb, var(--vapor-blue) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--vapor-blue) 20%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-175;
             box-shadow: 0 0 20px #ffffff25 !important;
-            border: solid 1px
-                color-mix(in srgb, var(--vapor-blue) 30%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--vapor-blue) 30%, transparent) !important;
         }
     }
 
     .gloomy {
-        --background: color-mix(
-            in srgb,
-            var(--gloomy-light-blue) 10%,
-            black 90%
-        );
+        --background: color-mix(in srgb,
+                var(--gloomy-light-blue) 10%,
+                black 90%);
         --foreground: color-mix(in srgb, var(--gloomy-teal) 15%, white 85%);
         --primary: var(--gloomy-blue);
         --primary-foreground: white;
@@ -157,15 +153,13 @@
         .pop-up-100 {
             @apply backdrop-brightness-150;
             box-shadow: 0 0 20px #ffffff20 !important;
-            border: solid 1px
-                color-mix(in srgb, var(--gloomy-blue) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--gloomy-blue) 20%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-200;
             box-shadow: 0 0 20px #ffffff25 !important;
-            border: solid 1px
-                color-mix(in srgb, var(--gloomy-blue) 30%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--gloomy-blue) 30%, transparent) !important;
         }
     }
 
@@ -183,15 +177,13 @@
         .pop-up-100 {
             @apply backdrop-brightness-200;
             box-shadow: 0 0 20px #ffffff20 !important;
-            border: solid 1px
-                color-mix(in srgb, var(--race-bronze) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--race-bronze) 20%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-300;
             box-shadow: 0 0 20px #ffffff25 !important;
-            border: solid 1px
-                color-mix(in srgb, var(--race-bronze) 30%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--race-bronze) 30%, transparent) !important;
         }
     }
 
@@ -201,11 +193,9 @@
         --primary: var(--soothing-olive);
         --primary-foreground: white;
         --secondary: var(--soothing-green);
-        --secondary-foreground: color-mix(
-            in srgb,
-            var(--soothing-olive) 15%,
-            var(--soothing-lime) 75%
-        );
+        --secondary-foreground: color-mix(in srgb,
+                var(--soothing-olive) 15%,
+                var(--soothing-lime) 75%);
         --muted: var(--soothing-gray);
         --muted-foreground: var(--soothing-muted-green);
         --accent: var(--soothing-lime);
@@ -236,18 +226,14 @@
 
         .pop-up-100 {
             @apply backdrop-brightness-95;
-            box-shadow: 0 0 20px
-                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent) !important;
-            border: solid 1px
-                color-mix(in srgb, var(--mono-slate) 10%, transparent) !important;
+            box-shadow: 0 0 20px color-mix(in srgb, var(--mono-dark-slate) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--mono-slate) 10%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-90;
-            box-shadow: 0 0 20px
-                color-mix(in srgb, var(--mono-dark-slate) 20%, transparent) !important;
-            border: solid 1px
-                color-mix(in srgb, var(--mono-slate) 10%, transparent) !important;
+            box-shadow: 0 0 20px color-mix(in srgb, var(--mono-dark-slate) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--mono-slate) 10%, transparent) !important;
         }
     }
 
@@ -264,18 +250,14 @@
 
         .pop-up-100 {
             @apply backdrop-brightness-95;
-            box-shadow: 0 0 20px
-                color-mix(in srgb, var(--luxe-green) 20%, transparent) !important;
-            border: solid 1px
-                color-mix(in srgb, var(--luxe-green) 5%, transparent) !important;
+            box-shadow: 0 0 20px color-mix(in srgb, var(--luxe-green) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--luxe-green) 5%, transparent) !important;
         }
 
         .pop-up-200 {
             @apply backdrop-brightness-90;
-            box-shadow: 0 0 20px
-                color-mix(in srgb, var(--luxe-green) 20%, transparent) !important;
-            border: solid 1px
-                color-mix(in srgb, var(--luxe-green) 5%, transparent) !important;
+            box-shadow: 0 0 20px color-mix(in srgb, var(--luxe-green) 20%, transparent) !important;
+            border: solid 1px color-mix(in srgb, var(--luxe-green) 5%, transparent) !important;
         }
     }
 
@@ -285,5 +267,66 @@
 
     body {
         @apply bg-background text-foreground;
+    }
+
+
+    @keyframes slideInLeft {
+        0% {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInBottom {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-in-bottom {
+        animation: slideInBottom 0.8s ease-out forwards;
+
+    }
+
+    .animate-slide-in-left {
+        animation: slideInLeft 0.8s ease-out forwards;
+    }
+
+    .animate-slide-in-right {
+        animation: slideInRight 0.8s ease-out forwards;
+    }
+
+    /* Optional: Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+
+        .animate-slide-in-left,
+        .animate-slide-in-right {
+            animation: none;
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }

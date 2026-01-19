@@ -1,45 +1,25 @@
-"use client";
-
 import Link from "next/link";
-import { ComponentPropsWithoutRef, useEffect, useState } from "react";
-import { Button } from "@/Components/UI/button";
-import { cn } from "@/Lib/Utils/shadCNUtils";
-import { Primitive } from "@radix-ui/react-primitive";
 import { ArrowRight } from "lucide-react";
-import { BiodataType } from "@/Lib/zod/schemas";
-import { useBiodataStore } from "@/Lib/Stores/BiodataStore";
-import AnimatedButton from "@/Components/UI/AnimatedButton";
+import { Button } from "@/Components/UI/button";
 
-
-type Props = {} & ComponentPropsWithoutRef<typeof Primitive.div>;
-
-// Separate component for content that uses biodata
-const StyledIntroContent = ({
-    biodata,
-    className
-}: { biodata: BiodataType | null } & ComponentPropsWithoutRef<typeof Primitive.div>) => {
+const StyledIntro = () => {
     return (
         <div
-            className={cn(
-                "flex flex-col justify-between font-rubik text-lg line",
-                className
-            )}
+            className="flex flex-col justify-between font-rubik text-lg line h-full"
         >
             <div>
                 <h1 className="font-inter font-extrabold text-6xl tracking-wider space">
-                    {`${biodata?.Name.First || "Giovanni"} (${
-                        biodata?.Nickname || "Gio"
-                    })`}
+                    {`Giovanni (Gio)`}
                 </h1>
                 <h1 className="font-inter font-extrabold text-6xl tracking-wider space">
-                    {`${biodata?.Name.Last || "Marcolla"} (纪欧)`}
+                    {`Marcolla (纪欧)`}
                 </h1>
                 <br />
                 <p className="font-black text-2xl">
                     <span className="left-0 bg-clip-text bg-linear-to-r from-primary to-secondary text-transparent text-3xl">
                         {` Multidisciplinary `}
                     </span>
-                    <span>{biodata?.Profession || `Computer Engineer`} </span>
+                    <span>{`Computer Engineer`} </span>
                     <br />
                     <span>Building</span>
                     <span className="relative text-transparent text-3xl italic hallow-stroke">
@@ -62,42 +42,25 @@ const StyledIntroContent = ({
             </div>
 
             <div className="flex justify-center items-center gap-4 mt-8 h-full">
-                <AnimatedButton className="hover:cursor-pointer pop-up-100">
+                <Button className="hover:cursor-pointer pop-up-100">
                     <Link href={"/experience"} className="flex flex-row justify-center items-center gap-2">
                         <p className="font-inter font-medium">
-                            Work Experience
+                            {`Work Experience`}
                         </p>
                         <ArrowRight />
                     </Link>
-                </AnimatedButton>
-                <AnimatedButton className="hover:cursor-pointer pop-up-100">
+                </Button>
+                <Button className="hover:cursor-pointer pop-up-100">
                     <Link href={"/projects"} className="flex flex-row justify-center items-center gap-2">
                         <p className="font-inter font-medium">
-                            Checkout my projects
+                            {`Checkout my projects`}
                         </p>
                         <ArrowRight />
                     </Link>
-                </AnimatedButton>
+                </Button>
             </div>
         </div>
     );
-};
-
-const StyledIntro = ({ className }: Props) => {
-    const getBiodata = useBiodataStore((state) => state.getData);
-    const [Biodata, setBiodata] = useState<BiodataType | null>(null);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            getBiodata().then(setBiodata).catch(() => {
-                console.error('Biodata fetch failed, keeping fallback data');
-            });
-        }, 100);
-
-        return () => clearTimeout(timer);
-    }, [getBiodata]);
-
-    return <StyledIntroContent biodata={Biodata} className={className} />;
 };
 
 export default StyledIntro;
